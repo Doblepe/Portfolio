@@ -1,9 +1,12 @@
-import React from 'react'
-import FormContact from '../Components/FormContact'
+import React from 'react';
+import ContactSection from '../Components/ContactSection';
+import Map from '../Components/Map';
+
 export default function Contact() {
-    return (
-        <div>
-            <FormContact/>
-        </div>
-    )
+  return (
+    <>
+      <ContactSection />
+      <Map />
+    </>
+  );
 }

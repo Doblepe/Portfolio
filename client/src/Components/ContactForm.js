@@ -5,8 +5,7 @@ const FormStyle = styled.form`
   width: 100%;
   .form-group {
     width: 100%;
-    margin: 2rem 5rem 0 5rem;
-    
+    margin-bottom: 2rem;
   }
   label {
     font-size: 1.8rem;
@@ -17,7 +16,7 @@ const FormStyle = styled.form`
     font-size: 2rem;
     padding: 1.2rem;
     color: var(--gray-1);
-    background-color: #241313;
+    background-color: var(--deep-dark);
     outline: none;
     border: none;
     border-radius: 8px;
@@ -37,7 +36,6 @@ const FormStyle = styled.form`
     padding: 1rem 4rem;
     border-radius: 8px;
     cursor: pointer;
-    margin: 2rem 5rem 0 5rem;
   }
 `;
 

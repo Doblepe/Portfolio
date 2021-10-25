@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectsComp from '../Components/ProjectsComp'
 import { Container, Row, Col } from 'react-bootstrap'
+import SectionTitle from '../Components/SectionTitle'
 
 function Projects() {
     const doneProjects = [
@@ -29,6 +30,7 @@ function Projects() {
     return (
         <Container fluid>
             <Row>
+            <SectionTitle heading="Projects" subheading="" />
                 <Col xs md={12}>
                     <Row>
                         {doneProjects.map((project) => { return (<ProjectsComp key={project.id} projectData={project} />) })}

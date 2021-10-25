@@ -4,15 +4,17 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import NavBarComp from './Components/NavbarComp';
+import NavMenu from './Components/NavMenu';
 import Footer from './Components/Footer';
+import ScrollToTop from './Components/ScrollToTop';
 
 
 function App() {
   return (
    
     <Router>
-      <NavBarComp />
+      <NavMenu />
+      <ScrollToTop/>
       <Switch>
         <Route path='/about'>
         <About />

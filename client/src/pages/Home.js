@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 import Typical from 'react-typical';
 
 
+
 export default function Home() {
     return (
         <Container fluid>
             <Row>
                 {/* ------------------------------------JUMBO -------------------------------- */}
                 <Col xs={12} md={12}>
-                    <Jumbotron className="jumbo">
+                <Jumbotron className="jumbo">
                     <span className="profile-details-name">
                         {" "}
                         Hello, I'M <span className="highlighted-text">Vicdoblepe</span>
@@ -40,7 +41,6 @@ export default function Home() {
                         <span className='profile-role-tag-line'>
                             I'm an enthusiastic JR Full Stack Developer looking for my first chance! Check up my projects!
                         </span>
-                    
                         <p>
                             <Button variant="primary" as={Link} to="/contact">Contact me</Button>
                         </p>

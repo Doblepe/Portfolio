@@ -3,6 +3,7 @@ import { Button} from 'react-bootstrap'
 import Map from '../Components/Map'
 import styled from 'styled-components'
 import AboutImg from '../assets/images/IMG_8178-min.jpg'
+import SectionTitle from '../Components/SectionTitle'
 
 export default function About() {
     const AboutPageStyles = styled.div`
@@ -79,6 +80,7 @@ export default function About() {
 
     return (
         <AboutPageStyles>
+          <SectionTitle heading="About" subheading="" />
         <div className="container">
           <div className="top-section">
             <div className="left">
