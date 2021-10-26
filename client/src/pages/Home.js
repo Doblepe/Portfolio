@@ -1,17 +1,22 @@
 import React from 'react'
-import { Jumbotron, Button, Container, Row, Col } from 'react-bootstrap'
+/* import { Jumbotron, Button, Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Typical from 'react-typical';
-
+import Videobg from '../assets/images/Abstract - 27726.mp4' */
+import HeroSection from '../Components/HeroSection'
 
 
 export default function Home() {
     return (
-        <Container fluid>
-            <Row>
-                {/* ------------------------------------JUMBO -------------------------------- */}
-                <Col xs={12} md={12}>
-                <Jumbotron className="jumbo">
+        <>
+            <HeroSection /> 
+        </>
+    )
+}
+
+
+
+{/*  <Jumbotron className="jumbo">
                     <span className="profile-details-name">
                         {" "}
                         Hello, I'M <span className="highlighted-text">Vicdoblepe</span>
@@ -44,9 +49,4 @@ export default function Home() {
                         <p>
                             <Button variant="primary" as={Link} to="/contact">Contact me</Button>
                         </p>
-                    </Jumbotron>
-                </Col>
-            </Row>
-        </Container>
-    )
-}
+                    </Jumbotron> */}
