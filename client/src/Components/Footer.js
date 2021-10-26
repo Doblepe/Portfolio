@@ -3,15 +3,19 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom'
 
 const FooterStyle = styled.div`
-  background-color: white;
+  background-color: var(--dark-bg);
   font-size: 1.2rem;
+  color: white;
 
   /* padding: 0 3rem 0 3rem; */
   .container {
     display: flex;
     gap: 3rem;
-    margin-top: 2rem;
-  }
+    padding: 2rem;
+     }
+    h1, h3 {
+      color: #5cb85c
+    } 
   .footer__col1 {
     flex: 2;
     padding: 0 3rem 3rem 3rem;
@@ -27,11 +31,12 @@ const FooterStyle = styled.div`
     margin-bottom: 1rem;
   }
   .copyright {
-    background-color: white;
-    color: black;
+    background-color: var(--dark-bg);
+    color: #5cb85c;
     text-align: left;
     padding: 0 3rem 0 3rem;
     margin-top: 0;
+    font-size: 2rem;
     .para {
       margin-left: 0;
     }
@@ -78,13 +83,13 @@ export default function Footer() {
 
         </div>
         <div className="footer__col3">
-          <h4>Contact Info</h4>
+          <h3>Contact Info</h3>
           <span> <i class="fas fa-phone-alt fa-3x"></i> 695650070</span>
           <br></br>
           <span> <i class="fas fa-envelope fa-3x"></i> Vicdobleperez@gmail.com</span>
         </div>
         <div className="footer__col4">
-          <h4>Social Info</h4>
+          <h3>Social Info</h3>
           <span><i className="fab fa-linkedin fa-3x"></i>Linkedin</span>
           <br></br>
           <span><i class="fab fa-github-square fa-3x"></i>GitHub</span>

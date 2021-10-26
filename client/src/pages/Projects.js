@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectsComp from '../Components/ProjectsComp'
+import ProjectsComp from '../Components/ProjectsSection'
 import { Container, Row, Col } from 'react-bootstrap'
 import SectionTitle from '../Components/SectionTitle'
 
