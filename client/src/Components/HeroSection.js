@@ -11,7 +11,6 @@ function HeroSection() {
         <VideoBg autoPlay loop muted src={Videobg} type='video/mp4' ></VideoBg>
       </HeroBg>
       <HeroContent>
-        
         <h1>
           {""}
           <Typical
@@ -20,6 +19,7 @@ function HeroSection() {
             wrapper="p"
           />
         </h1>
+        {/* TODO: Search for a bumping style for the button on 3000 */}
         <Button variant="success" as={Link} to="/contact">CONTACT ME</Button>
       </HeroContent>
     </HeroContainer>

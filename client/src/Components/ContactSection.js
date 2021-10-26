@@ -4,9 +4,12 @@ import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import ContactForm from './ContactForm';
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
-
+import ContactBanner from './ContactBanner'
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
+  background-color: var(--dark-bg);
+  color: white;
+  
   .contactSection__wrapper {
     display: flex;
     gap: 5rem;
@@ -67,6 +70,7 @@ export default function ContactSection() {
             <ContactForm />
           </div>
         </div>
+        <ContactBanner />
       </div>
     </ContactSectionStyle>
   );

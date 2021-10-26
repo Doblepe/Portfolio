@@ -1,8 +1,5 @@
 import React from 'react'
-/* import { Jumbotron, Button, Container, Row, Col } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import Typical from 'react-typical';
-import Videobg from '../assets/images/Abstract - 27726.mp4' */
+
 import HeroSection from '../Components/HeroSection'
 
 
@@ -13,40 +10,3 @@ export default function Home() {
         </>
     )
 }
-
-
-
-{/*  <Jumbotron className="jumbo">
-                    <span className="profile-details-name">
-                        {" "}
-                        Hello, I'M <span className="highlighted-text">Vicdoblepe</span>
-                    </span>
-                    <div className='colz-icon'>
-                            <a href='https://www.linkedin.com/in/victor-perez-perez-programacion-web-development/' target='_blank' rel='noreferrer'>
-                                <span
-                                    style={{ fontSize: 30 }}
-                                    className="mdi mdi-linkedin"
-                                />
-                            </a>
-                            <a href='https://github.com/Doblepe' target='_blank' rel='noreferrer'>
-                                <span
-                                    style={{ fontSize: 30 }}
-                                    className="mdi mdi-github"
-                                />
-                            </a>
-                        </div>
-                    <h1>
-                            {""}
-                            <Typical
-                                steps={['Hello World!🌎⚡', 1000, 'Are you looking for the best JR Developer?👀 ', 1000, `You're on the right place!😏👌`, 1000]}
-                                loop={Infinity}
-                                wrapper="p"
-                            />
-                        </h1>
-                        <span className='profile-role-tag-line'>
-                            I'm an enthusiastic JR Full Stack Developer looking for my first chance! Check up my projects!
-                        </span>
-                        <p>
-                            <Button variant="primary" as={Link} to="/contact">Contact me</Button>
-                        </p>
-                    </Jumbotron> */}

@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 const FormStyle = styled.form`
   width: 100%;
+  
   .form-group {
     width: 100%;
     margin: 2rem 5rem 0 5rem;
-    
   }
   label {
     font-size: 1.8rem;
@@ -16,8 +16,8 @@ const FormStyle = styled.form`
     width: 100%;
     font-size: 2rem;
     padding: 1.2rem;
-    color: var(--gray-1);
-    background-color: #241313;
+    color: #241313 ;
+    background-color: var(--gray-1);
     outline: none;
     border: none;
     border-radius: 8px;

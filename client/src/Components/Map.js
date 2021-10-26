@@ -18,8 +18,8 @@ const MapStyles = styled.div`
     right: 10%;
     bottom: 10%;
     padding: 2rem;
-    background-color: whitesmoke;
-    opacity:70%;
+    background-color: var(--green);
+    opacity:90%;
     width: 100%;
     max-width: 300px;
     border-radius: 12px;
@@ -33,6 +33,7 @@ const MapStyles = styled.div`
     font-size: 1.6rem;
     margin-top: 3rem;
     text-decoration: underline;
+    color: white;
   }
   @media only screen and (max-width: 768px) {
     background-position: 80% center;
