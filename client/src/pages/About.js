@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import Map from '../Components/Map'
+import Map from '../Components/About/Map'
 import styled from 'styled-components'
 import AboutImg from '../assets/images/IMG_8178-min.jpg'
-import SectionTitle from '../Components/SectionTitle'
+import SectionTitle from '../Components/Reusable/SectionTitle'
 
 
 export default function About() {

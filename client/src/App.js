@@ -4,10 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import NavMenu from './Components/NavMenu';
-import Footer from './Components/Footer';
-import SmoothScrollBar from './Components/SmoothScrollbar'
-
+import NavMenu from './Components/Reusable/NavMenu';
+import Footer from './Components/Reusable/Footer';
+import SmoothScrollBar from './Components/Reusable/SmoothScrollbar'
 
 
 function App() {
@@ -30,6 +29,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+          <br/> 
         <Footer />
   
     </Router>
