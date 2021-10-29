@@ -1,5 +1,4 @@
 import React from 'react'
-import { HeroBg, HeroContainer, VideoBg, HeroContent } from './HeroElements'
 import Videobg from '../../assets/images/video.mp4'
 import styled from 'styled-components'
 import Typical from 'react-typical';
@@ -49,8 +48,6 @@ color: white;
 `
   return (
     <HeroStyles>
-
-
       <div className='HeroContainer'>
         <div className='HeroBg'>
           <video className='VideoBg' autoPlay loop muted src={Videobg} type='video/mp4' ></video>

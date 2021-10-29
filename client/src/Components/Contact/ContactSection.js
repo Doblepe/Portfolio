@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdEmail, MdLocalPhone } from 'react-icons/md';
+import { MdEmail, MdFormatLineSpacing, MdLocalPhone } from 'react-icons/md';
 import ContactForm from './ContactForm';
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from '../Reusable/SectionTitle';
+import mailContactForm from './mailContactForm';
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
   background-color: var(--dark-bg);
@@ -66,7 +67,7 @@ export default function ContactSection() {
             <ContactInfoItem text="Bilbao, Basque Country, Spain" />
           </div>
           <div className="right">
-            <ContactForm />
+            <ContactForm/>
           </div>
         </div>
       </div>
