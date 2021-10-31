@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdEmail, MdFormatLineSpacing, MdLocalPhone } from 'react-icons/md';
+import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import ContactForm from './ContactForm';
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from '../Reusable/SectionTitle';
-import mailContactForm from './mailContactForm';
+
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
   background-color: var(--dark-bg);
