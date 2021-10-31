@@ -21,9 +21,7 @@ const NavStyles = styled.nav`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: #5cb85c
-
-;
+        background-color: #5cb85c;
       }
     }
     a {
@@ -40,6 +38,7 @@ const NavStyles = styled.nav`
   }
   .mobile-menu-icon {
     position: absolute;
+    color:white;
     right: 1rem;
     top: 1rem;
     width: 4rem;

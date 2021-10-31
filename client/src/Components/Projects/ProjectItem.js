@@ -29,17 +29,22 @@ const ProjectItemStyles = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
+  .projectItem__links{
+    display: flex;
+    align-items:center;
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
     }
   }
 `;
-
 export default function ProjectItem({
   img = ProjectImg,
   title = 'Project Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  git = 'https://github.com/Doblepe/La-Tienda',
+  link = 'https://la-tienda.netlify.app/'
 }) {
   return (
     <ProjectItemStyles>
@@ -51,6 +56,10 @@ export default function ProjectItem({
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
+        <div className="projectItem__links">
+        <a href={git} target="_blank" rel='noreferrer' > <i class="fab fa-github-square fa-3x"></i></a>
+        <a href={link} target="_blank" rel='noreferrer'> <i class="fas fa-external-link-square-alt fa-3x"></i></a>
+        </div>
       </div>
     </ProjectItemStyles>
   );
