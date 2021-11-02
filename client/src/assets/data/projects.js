@@ -22,7 +22,7 @@ const projects = [
       'An app to help people to get an overview of how they can make the city beautiful.',
     img: GreenCtgImg,
     git: 'https://github.com/Doblepe/La-Tienda',
-    link: 'https://la-tienda.netlify.app/',
+    link: '',
   },
   {
     id: uuidv4(),

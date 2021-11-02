@@ -10,6 +10,9 @@ export default function About() {
   background-color: var(--dark-bg);
   color: white;
   padding: 10rem 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
   .top-section {
     display: flex;
     align-items: center;
@@ -50,11 +53,13 @@ export default function About() {
     }
   }
   .about__info__items {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     background-color: var(--deep-dark); 
     margin-top: 5rem;
     padding: 5rem;
     margin-bottom: 5rem;
-    border: solid var(--green); 
+    border: solid var(--green);
  i{
     align-items: center;
     justify-content: space-between;
@@ -66,12 +71,14 @@ export default function About() {
 }
   .about__info__item {
     margin-bottom: 5rem;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 2rem 2rem;
   }
   .about__info__heading {
     font-size: 3.6rem;
-    color: var(--grey-1);
+    padding: 0 0 2rem 0;
     span {
       background-color: var(--green);
       padding: 0.5rem;
@@ -122,6 +129,7 @@ export default function About() {
             <img src={AboutImg} alt="me" />
           </div>
         </div>
+     {/* ---------------------   ABOUT BOX -----------------------------*/}
         <div className="about__info__items">
           <div className="about__info__item">
             <h1 className="about__info__heading"><span>Education</span></h1>
@@ -129,21 +137,24 @@ export default function About() {
             <PText>JavaScript Full Stack Developer course on <a href="http://cursos.bbkbootcamp.com/?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbQcvt29TMEJ8eHRgVsS7aQOgNgs-KxJCEIV_bJcLF7qoeNsuOBDUDhoCwIUQAvD_BwE" rel='noreferrer' target='_blank'>BBK Bootcamp</a>
             <br />
             Desarrollo de aplicaciones con Angular on <a href="https://formacion.ipartek.com/"> Ipartek</a></PText>
+    
           </div>
           <div className="about__info__item">
+            <div className="inside_items">
             <h1 className="about__info__heading"><span> Dev tools </span></h1>
             <h3>FrontEnd</h3>
-            <div className="frontend-icons">
               <i class="fab fa-html5 fa-5x"></i>
               <i class="fab fa-react fa-5x"></i>
               <i class="fab fa-angular fa-5x"></i>
               <i class="fab fa-css3 fa-5x"></i>
               <i class="fab fa-js-square fa-5x"></i>
-            </div>
+              <i class="fab fa-bootstrap fa-5x"></i>
             <h3>BackEnd</h3>
             <i class="fab fa-node fa-5x"></i>
-            <h3>Metodology</h3>
+            <h3>Also</h3>
+            <i class="fab fa-github-square fa-5x"></i>
             <PText>Agiles, Scrum</PText>
+            </div>
           </div>
           {/* <div className="about__info__item">
             <h1 className="about__info__heading"><span>Experiences</span></h1>

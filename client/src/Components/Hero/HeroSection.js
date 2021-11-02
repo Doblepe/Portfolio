@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Typical from 'react-typical';
 import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import CoolButton from '../Reusable/CoolButton';
 function HeroSection() {
 
   const HeroStyles = styled.div`
@@ -62,7 +63,8 @@ color: white;
             />
           </h1>
           {/* TODO: Search for a bumping style for the button on 3000 */}
-          <Button variant="success" as={Link} to="/contact">CONTACT ME</Button>
+          {/* <Button variant="success" as={Link} to="/contact">CONTACT ME</Button> */}
+          <CoolButton/>
         </div>
       </div>
     </HeroStyles>

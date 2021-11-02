@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ProjectImg from '../../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
+
   .projectItem__img {
     width: 100%;
     height: 400px;
@@ -23,6 +24,7 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__title {
     font-size: 2.2rem;
+    color: var(--green)
   }
   .projectItem__desc {
     font-size: 1.6rem;
@@ -31,7 +33,10 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__links{
     display: flex;
-    align-items:center;
+    justify-content: space-around;
+  }
+  .projectItem__links i {
+    color: var(--green)
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
@@ -43,8 +48,8 @@ export default function ProjectItem({
   img = ProjectImg,
   title = 'Project Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  git = 'https://github.com/Doblepe/La-Tienda',
-  link = 'https://la-tienda.netlify.app/'
+  git = 'Lorem Ipsum is simply dummy text o',
+  link = 'Lorem Ipsum is simply dummy text o'
 }) {
   return (
     <ProjectItemStyles>
@@ -57,8 +62,8 @@ export default function ProjectItem({
         </Link>
         <p className="projectItem__desc">{desc}</p>
         <div className="projectItem__links">
-        <a href={git} target="_blank" rel='noreferrer' > <i class="fab fa-github-square fa-3x"></i></a>
-        <a href={link} target="_blank" rel='noreferrer'> <i class="fas fa-external-link-square-alt fa-3x"></i></a>
+          <a href={git} target="_blank" rel='noreferrer' > <i class="fab fa-github-square fa-3x"></i></a>
+          {{link} === '' ? <i></i> : <a href={link} target="_blank" rel='noreferrer'> <i class="fas fa-external-link-square-alt fa-3x"></i></a>}
         </div>
       </div>
     </ProjectItemStyles>

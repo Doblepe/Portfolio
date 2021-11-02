@@ -16,8 +16,10 @@ const GlobalStyles = createGlobalStyle`
     --green: #5cb85c;
   }
   html{
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
     font-size: 10px;
-    font-family: 'Roboto Mono';
+    font-family: 'Raleway', sans-serif;
+  
     background-color: var(--dark-bg);
   }
   ul,li{
