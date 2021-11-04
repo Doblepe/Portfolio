@@ -1,12 +1,11 @@
 import React from 'react';
 /* import ContactSection from '../Components/Contact/ContactSection'; */
-import Form from '../Components/Contact/Form'
+import ContactSection from '../Components/Contact/ContactSection'
 
 export default function Contact() {
   return (
     <>
-    <Form/>
-     {/*  <ContactSection /> */}
+     <ContactSection /> 
     </>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MdEmail, MdLocalPhone } from 'react-icons/md';
-import ContactForm from './ContactForm';
+import Form from './Form';
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from '../Reusable/SectionTitle';
 
@@ -67,7 +67,7 @@ export default function ContactSection() {
             <ContactInfoItem text="Bilbao, Basque Country, Spain" />
           </div>
           <div className="right">
-            <ContactForm/>
+            <Form/>
           </div>
         </div>
       </div>

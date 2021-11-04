@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import sending from '../../assets/images/sending.gif'
 import PersonIcon from '@material-ui/icons/Person';
-import EmailIcon from '@material-ui/icons/Email';
+/* import EmailIcon from '@material-ui/icons/Email'; */
 import BusinessIcon from '@material-ui/icons/Business';
 import SubjectIcon from '@material-ui/icons/Subject';
 import axios from 'axios'
@@ -11,7 +11,7 @@ import 'react-quill/dist/quill.snow.css';
 
 function Form() {
 
-  const [email, setEmail] = useState('')
+  /* const [email, setEmail] = useState('') */
   const [message, setMessage] = useState('')
   const [name, setName] = useState('')
   const [subject, setSubject] = useState('')
@@ -21,9 +21,9 @@ function Form() {
   const handleQuillChange = (value) => {
     setMessage(value)
   }
-
+  const email = 'vicdobleperez@gmail.com'
   const handleRequest = async (e) => {
-    if(email && company && name && subject !== ""){
+    if( company && name && subject !== ""){
       if(message !== ""){
       e.preventDefault()
     setLoading(true)
@@ -123,12 +123,12 @@ function Form() {
               />
             </div>
             </div>
-            <div className = "form__containerItem">
+           {/* <div className = "form__containerItem">
               <div className = "form__containerItemName">
               <label>Email</label>
               <EmailIcon />
             </div>
-            <div className = "form__containerItemField">
+             <div className = "form__containerItemField">
               <input 
                 id = "email"
                 value = {email}
@@ -138,7 +138,7 @@ function Form() {
                 placeholder = "Enter Your valid Email"
               />
             </div>
-            </div>
+            </div> */}
             <div className = "form__containerItem">
               <div className = "form__containerItemName">
               <label>Company</label>
