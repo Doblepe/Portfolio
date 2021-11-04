@@ -57,7 +57,7 @@ function Form() {
     } else {
       alert('Please fill all required filled')
     }
-    
+    //fetch method
 
     // const response = await fetch("/mail", {
     //   method: 'POST',
