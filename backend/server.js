@@ -1,5 +1,6 @@
 // Check up the documentation (https://lo-victoria.com/how-to-build-a-contact-form-with-javascript-and-nodemailer )
 const creds = require('./credential.json')
+const cors = require('cors')
 
 // console.log(creds)
 
@@ -9,10 +10,13 @@ let nodemailer = require('nodemailer');
 const bodyParser = require('body-parser')
 
 const path = require('path');
-const router = express.Router()
+/* const router = express.Router() */
 
 // Static folder
 app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use(cors({
+    orignin: "*"}
+))
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
@@ -67,7 +71,7 @@ transporter.verify(function(error, success) {
   });
 
 // serve PORT running here
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3030
 app.listen(PORT, () => console.info(`server has started on ${PORT}`))
 
 /*

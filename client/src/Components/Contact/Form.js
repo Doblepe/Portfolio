@@ -37,7 +37,7 @@ function Form() {
       company
     }
 
-   await axios.post('3001/mail', body, {
+   await axios.post('https://morning-woodland-47559.herokuapp.com/mail', body, {
       headers: {
         'Content-type': 'application/json'
       }
