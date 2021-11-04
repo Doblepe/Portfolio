@@ -45,7 +45,7 @@ function Form() {
       alert('Email Sent Successfully')
       setLoading(false)
       console.log(res)
-      window.location.reload()
+      /* window.location.reload() */
     }).catch((err) => {
       console.log(err)
       setLoading(false)
