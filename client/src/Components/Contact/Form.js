@@ -21,7 +21,13 @@ function Form() {
   const handleQuillChange = (value) => {
     setMessage(value)
   }
-  
+  function resetForm(){
+    setEmail('');
+    setMessage('');
+    setName('');
+    setSubject('');
+    setCompany('');
+  }
   const handleRequest = async (e) => {
     if( email && company && name && subject !== ""){
       if(message !== ""){
@@ -45,7 +51,7 @@ function Form() {
       alert('Email Sent Successfully')
       setLoading(false)
       console.log(res)
-      /* window.location.reload()  RESET ALL THE FIELDS WITH A FUNCTION*/ 
+      resetForm() 
     }).catch((err) => {
       console.log(err)
       setLoading(false)
@@ -173,9 +179,6 @@ function Form() {
           <div className = "form__containerItem">
             <div className = "form__containerItemName">
               <label>Compose Mail</label>
-              <button
-              disabled = {loading}
-              onClick = {handleRequest}  type = "submit" className = "btn btn-success">Send</button>
             </div></div>
             <div className = "container__composeMail">
             <ReactQuill
@@ -190,7 +193,12 @@ function Form() {
         </div> 
       
     </div>
+    <div>
+    <button
+              disabled = {loading}
+              onClick = {handleRequest}  type = "submit" className = "btn btn-success">Send</button>
     
+   </div>         
    </div>
    
  </div>

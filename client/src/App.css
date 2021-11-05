@@ -41,19 +41,19 @@ box-shadow: 8px 8px 8px -4px #040a0098;
 display: flex;
 align-items: center;
 padding: 50px;
-background-color: black;
+background-color: var(--deep-dark);
 flex-direction: column;
 border-radius: 5px;
-width: 700px;
+width: 500px;
 }
 
 .form__title{
 display: flex;
-color: aqua;
+color: var(--green);
 }
 
 .form__title > h4{
-font-size: 2rem;
+font-size: 4rem;
 font-weight: 400;
 border-bottom: 2px solid #f74b42;
 }
@@ -91,7 +91,7 @@ font-weight: 400;
 }
 
 .form__containerItemName > .MuiSvgIcon-root{
-color: #f74b42;
+color: var(--green);
 font-size: xx-large;
 }
 

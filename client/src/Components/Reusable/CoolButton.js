@@ -124,7 +124,7 @@ a span:nth-child(4){
 `
     return (
         <CoolButtonStyle>
-            <a href='https://vicdoblepe-portfolio.netlify.app/contact'>
+            <a  href='/contact' >
                 <span></span>
                 <span></span>
                 <span></span>

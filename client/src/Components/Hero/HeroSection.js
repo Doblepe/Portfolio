@@ -2,7 +2,6 @@ import React from 'react'
 import Videobg from '../../assets/images/video.mp4'
 import styled from 'styled-components'
 import Typical from 'react-typical';
-import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import CoolButton from '../Reusable/CoolButton';
 function HeroSection() {
@@ -36,14 +35,16 @@ z-index: 1;
  background: #232a34;
 }
 .HeroContent{
-  z-index: 3;
-max-width: 1200px;
-position: absolute;
-padding: 8px 24px;
-display: flex;
-flex-direction: column;
-align-items: center;
-color: white;
+  background-color: #ffffff10;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px)
+  width: 600px;
+  position: absolute;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
 `
@@ -62,9 +63,8 @@ color: white;
               wrapper="p"
             />
           </h1>
-          {/* TODO: Search for a bumping style for the button on 3000 */}
           {/* <Button variant="success" as={Link} to="/contact">CONTACT ME</Button> */}
-          <CoolButton/>
+          <CoolButton as={Link} to="/contact" />
         </div>
       </div>
     </HeroStyles>
