@@ -1,42 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom'
+import FooterCol from './FooterCol';
+import PText from './PText';
 
 const FooterStyle = styled.div`
   background-color: var(--dark-bg);
-  font-size: 1.2rem;
+  padding-top: 10rem;
   color: white;
-
-  /* padding: 0 3rem 0 3rem; */
+  font-size: 1.2rem;
   .container {
     display: flex;
     gap: 3rem;
-    padding: 2rem;
-     }
-    h1, h3 {
-      color: #5cb85c
-    } 
+  }
   .footer__col1 {
     flex: 2;
-    padding: 0 3rem 3rem 3rem;
   }
   .footer__col2,
   .footer__col3,
   .footer__col4 {
-    flex:1;
-    outline:none;
+    flex: 1;
   }
   .footer__col1__title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+    color: var(--green)
   }
   .copyright {
     background-color: var(--dark-bg);
-    color: #5cb85c;
+    color: var(--green);
     text-align: left;
-    padding: 0 3rem 0 3rem;
-    margin-top: 0;
-    font-size: 2rem;
+    padding: 1rem 0;
+    margin-top: 5rem;
     .para {
       margin-left: 0;
     }
@@ -55,7 +49,7 @@ const FooterStyle = styled.div`
     .copyright {
       .container {
         div {
-          margin-top: 0; 
+          margin-top: 0;
         }
       }
     }
@@ -68,39 +62,75 @@ export default function Footer() {
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Víctor Pérez</h1>
-          <p>
-            I am a JR Developer who is searching for his firts oportunity on the developement World.
-          </p>
+          <PText>
+          I am a JR Developer who is searching for his first oportunity on the developement World.
+          </PText>
         </div>
         <div className="footer__col2">
-          <Link as={Link} to="/">Home</Link>
-          <br></br>
-          <Link as={Link} to="/contact">Contact</Link>
-          <br></br>
-          <Link as={Link} to="/projects">Projects</Link>
-          <br></br>
-          <Link as={Link} to="/about">About</Link>
-
+          <FooterCol
+            heading="Important Links"
+            links={[
+              {
+                title: 'Home',
+                path: '/',
+                type: 'Link',
+              },
+              {
+                type: 'Link',
+                title: 'About',
+                path: '/about',
+              },
+              {
+                type: 'Link',
+                title: 'Projects',
+                path: '/projects',
+              },
+              {
+                type: 'Link',
+                title: 'Contact',
+                path: '/contact',
+              },
+            ]}
+          />
         </div>
         <div className="footer__col3">
-          <h3>Contact Info</h3>
-          <span> <i class="fas fa-phone-alt fa-3x"></i> 695650070</span>
-          <br></br>
-          <span> <i class="fas fa-envelope fa-3x"></i> Vicdobleperez@gmail.com</span>
+          <FooterCol
+            heading="Contact Info"
+            links={[
+              {
+                title: ' +34 695 650 070',
+              },
+              {
+                title: 'Vicdobleperez@gmail.com',
+              },
+              {
+                title: 'Bilbao, Basque Country, Spain',
+                path: 'https://www.google.com/maps/place/Bilbao,+Vizcaya/@43.2557861,-2.9412897,14z/data=!4m5!3m4!1s0xd4e4e27664b89b9:0x6534acc41e95a645!8m2!3d43.2630126!4d-2.9349852',
+              },
+            ]}
+          />
         </div>
         <div className="footer__col4">
-          <h3>Social Info</h3>
-          <span><i className="fab fa-linkedin fa-3x"></i>Linkedin</span>
-          <br></br>
-          <span><i class="fab fa-github-square fa-3x"></i>GitHub</span>
+          <FooterCol
+            heading="social Links"
+            links={[
+              {
+                title: 'LinkedIn',
+                path: 'https://www.linkedin.com/in/victor-perez-perez-programacion-web-development/',
+              },
+              {
+                title: 'GitHub',
+                path: 'https://github.com/doblepe',
+              },
+            ]}
+          />
         </div>
-        <hr/>
       </div>
       <div className="copyright">
         <div className="container">
-          <p>
-            © 2021 - Designed By{' '} | Vicdoblepe 
-          </p>
+          <PText>
+            © 2021 - Víctor Pérez | @Vicdoblepe
+          </PText>
         </div>
       </div>
     </FooterStyle>
