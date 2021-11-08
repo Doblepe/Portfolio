@@ -35,7 +35,7 @@ z-index: 1;
  background: #232a34;
 }
 .HeroContent{
-  padding: 3rem 0 3rem 0;
+  padding: 3rem;
   background-color: #ffffff10;
   backdrop-filter:blur(12px);
   -webkit-backdrop-filter:blur(12px);

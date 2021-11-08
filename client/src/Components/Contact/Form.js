@@ -12,7 +12,7 @@ import './form.css'
 
 function Form() {
 
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState('vicdobleperez@gmail.com')
   const [message, setMessage] = useState('')
   const [name, setName] = useState('')
   const [subject, setSubject] = useState('')
@@ -27,6 +27,7 @@ function Form() {
     setCompany('');
   }
   const handleRequest = async (e) => {
+  
     if (email && company && name && subject !== "") {
       if (message !== "") {
         e.preventDefault()
@@ -46,7 +47,7 @@ function Form() {
             'Content-type': 'application/json'
           }
         }).then((res) => {
-          alert('Email Sent Successfully')
+          alert('Email Sent Successfully. I will text you back as soon as posible')
           setLoading(false)
           console.log(res)
           resetForm()
@@ -127,7 +128,7 @@ function Form() {
                   />
                 </div>
               </div>
-              <div className="form__containerItem">
+       {/*        <div className="form__containerItem">
                 <div className="form__containerItemName">
                   <label>Email</label>
                   <EmailIcon />
@@ -142,7 +143,7 @@ function Form() {
                     placeholder="Enter Your valid Email"
                   />
                 </div>
-              </div>
+              </div> */}
               <div className="form__containerItem">
                 <div className="form__containerItemName">
                   <label>Company</label>
@@ -186,7 +187,7 @@ function Form() {
                     onChange={(e) => setMessage(e.target.value)}
                     required
                     type="text"
-                    placeholder="Add your message"
+                    placeholder="Add your message and a way to contact back"
                   />
                 </div>
               </div>
