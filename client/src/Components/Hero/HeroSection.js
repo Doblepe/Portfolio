@@ -35,9 +35,11 @@ z-index: 1;
  background: #232a34;
 }
 .HeroContent{
+  padding: 3rem 0 3rem 0;
   background-color: #ffffff10;
   backdrop-filter:blur(12px);
-  -webkit-backdrop-filter:blur(12px)
+  -webkit-backdrop-filter:blur(12px);
+  border: solid var(--green) 2px;
   width: 600px;
   position: absolute;
   padding: 8px 24px;
@@ -63,7 +65,6 @@ z-index: 1;
               wrapper="p"
             />
           </h1>
-          {/* <Button variant="success" as={Link} to="/contact">CONTACT ME</Button> */}
           <CoolButton as={Link} to="/contact" />
         </div>
       </div>
