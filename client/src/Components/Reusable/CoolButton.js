@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+
 
 
 function CoolButton() {
@@ -124,13 +126,13 @@ a span:nth-child(4){
 `
     return (
         <CoolButtonStyle>
-            <a  href='/contact' >
+            <NavLink to="/contact">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Contact Me!
-            </a>
+            </NavLink>
         </CoolButtonStyle>
     )
 }

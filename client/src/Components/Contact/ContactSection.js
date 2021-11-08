@@ -36,7 +36,7 @@ const ContactSectionStyle = styled.div`
     max-width: 500px;
     width: 100%;
     border-radius: 12px;
-    /* padding-left: 3rem; */
+    padding-left: 3rem; 
   }
   @media only screen and (max-width: 768px) {
     .contactSection__wrapper {
@@ -48,9 +48,6 @@ const ContactSectionStyle = styled.div`
     .left,
     .right {
       max-width: 100%;
-    }
-    .right {
-      padding: 4rem 2rem 2rem 2rem;
     }
   }
 `;

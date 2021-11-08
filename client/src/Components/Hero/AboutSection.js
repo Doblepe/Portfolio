@@ -82,7 +82,7 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am a JR Full-Stack Developer from Bilbao, Basque Country (Spain). I'm an enthusiastic develepor and I'm looking forward to have a chance for showing  you what I can do. 
+            I am a JR Full-Stack Developer from Bilbao, Basque Country (Spain). I'm an enthusiastic developer and I'm looking forward to have a chance for showing dyou what I can do. 
             Trust me, I won't let you down.
           </PText>
           <div className="aboutSection__buttons">
