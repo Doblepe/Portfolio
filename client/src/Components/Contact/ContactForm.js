@@ -81,7 +81,7 @@ function resetForm(){
       } */
   return (
     <>
-      <FormStyle>
+      <form>
         <div className="form-group" id="contact-form">
           <label htmlFor="name">
             Your Name
@@ -119,7 +119,7 @@ function resetForm(){
           </label>
         </div>
         <button type="submit" onClick={()=>{submitEmail()}}>Send</button>
-      </FormStyle>
+      </form>
     </>
   );
   }

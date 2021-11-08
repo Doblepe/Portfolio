@@ -38,7 +38,7 @@ const NavStyles = styled.nav`
   }
   .mobile-menu-icon {
     position: absolute;
-    color:white;
+    color: var(--green);
     right: 1rem;
     top: 1rem;
     width: 4rem;
@@ -76,6 +76,7 @@ const NavStyles = styled.nav`
         width: 3rem;
         margin: 0 0 0 auto;
         cursor: pointer;
+        color: var(--green);
         * {
           pointer-events: none;
         }

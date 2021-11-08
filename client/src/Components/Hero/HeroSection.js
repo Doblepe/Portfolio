@@ -42,13 +42,19 @@ z-index: 1;
   border: solid var(--green) 2px;
   width: 600px;
   position: absolute;
-  padding: 8px 24px;
+  padding: 3rem 0 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
+@media only screen and (max-width: 768px) {
+    .HeroContent {
+     width: 80%;
+     padding: 3rem;
+    }
 
+  }
 `
   return (
     <HeroStyles>
