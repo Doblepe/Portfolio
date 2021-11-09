@@ -14,7 +14,7 @@ button[type='submit'] {
   outline: none;
   border: none;
   margin-top: 2rem;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -24,11 +24,10 @@ button[type='submit'] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   padding: 2rem;
-  background-color: var(--deep-dark);
-  align-items: center;
-  gap: 2rem;
-  border-radius: 8px;
+    background-color: var(--deep-dark);
+    align-items: center;
+    gap: 2rem;
+   border-radius: 8px;
   margin-bottom: 2rem;
     }
     textarea {
@@ -123,6 +122,9 @@ button[type='submit'] {
         .top-section {
           flex-direction: column;
           gap: 5rem;
+        }
+        .form{
+          
         }
         .about__subheading {
           font-size: 1.8rem;

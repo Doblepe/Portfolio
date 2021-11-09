@@ -6,10 +6,11 @@ import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from '../Reusable/SectionTitle';
 
 const ContactSectionStyle = styled.div`
-  padding: 10rem 0;
   background-color: var(--dark-bg);
   color: white;
-  
+  padding: 10rem 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
   .contactSection__wrapper {
     display: flex;
     gap: 5rem;

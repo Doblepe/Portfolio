@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import ProjectImg from '../images/projectImg.png';
-import tutienda from '../images/tutienda.jpg';
+import tutienda from '../images/latienda.png';
 import portfolio from '../images/portafolio.png';
 import CoinTrackerImg from '../images/cointracker.jpg';
 import CavinImg from '../images/cavinimg.jpg';
@@ -13,7 +13,7 @@ const projects = [
       'An E-comerce full stack developed on the MERN Stack',
     img: tutienda,
     git: 'https://github.com/Doblepe/La-Tienda',
-    link: 'https://la-tienda.netlify.app/',
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:6831484833517080576/',
   },
   {
     id: uuidv4(),

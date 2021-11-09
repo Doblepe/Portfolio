@@ -23,7 +23,7 @@ export default function About() {
     color: white;
   }
   p{font-family: 'Raleway', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 2rem 0 0 0;
 }
   .left {
@@ -44,7 +44,7 @@ export default function About() {
     }
   }
   .about__heading {
-    font-size: 8.6rem;
+    font-size: 3.6rem;
     margin-bottom: 3rem;
     color: var(--green)
   }
@@ -104,6 +104,9 @@ export default function About() {
       margin-bottom: 2rem;
     }
   }
+  @media only screen and (max-width: 768px) {
+  font-size: 1.2rem;
+}
 
 `;
   return (

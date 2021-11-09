@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import sending from '../../assets/images/sending.gif'
 import PersonIcon from '@material-ui/icons/Person';
-import EmailIcon from '@material-ui/icons/Email';
+/* import EmailIcon from '@material-ui/icons/Email'; */
 import BusinessIcon from '@material-ui/icons/Business';
 import SubjectIcon from '@material-ui/icons/Subject';
 import axios from 'axios'
