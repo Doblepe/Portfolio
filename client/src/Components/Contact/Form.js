@@ -6,7 +6,6 @@ import EmailIcon from '@material-ui/icons/Email';
 import BusinessIcon from '@material-ui/icons/Business';
 import SubjectIcon from '@material-ui/icons/Subject';
 import axios from 'axios'
-import 'react-quill/dist/quill.snow.css';
 import './form.css'
 
 

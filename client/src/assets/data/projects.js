@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import ProjectImg from '../images/projectImg.png';
 import tutienda from '../images/tutienda.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
+import portfolio from '../images/portafolio.png';
 import CoinTrackerImg from '../images/cointracker.jpg';
 import CavinImg from '../images/cavinimg.jpg';
 
@@ -17,11 +17,11 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'Portafolio',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
-    git: 'https://github.com/Doblepe/La-Tienda',
+      'This is the code for these page.',
+    img: portfolio,
+    git: 'https://github.com/Doblepe/Portfolio/tree/master',
     link: '',
   },
   {

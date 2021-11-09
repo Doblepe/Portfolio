@@ -44,7 +44,7 @@ export default function About() {
     }
   }
   .about__heading {
-    font-size: 3.6rem;
+    font-size: 8.6rem;
     margin-bottom: 3rem;
     color: var(--green)
   }
@@ -90,7 +90,7 @@ export default function About() {
     border-bottom: 2px solid var(--green);
   }
   .about__info__heading {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     padding: 2rem 0 2rem 0;
     color: var(--green);
     border-bottom: 2px solid var(--green);
@@ -104,22 +104,7 @@ export default function About() {
       margin-bottom: 2rem;
     }
   }
-  @media only screen and (max-width: 768px) {
-    padding: 10rem 0;
-    .top-section {
-      flex-direction: column;
-      gap: 5rem;
-    }
-    .about__subheading {
-      font-size: 1.8rem;
-    }
-    .about__heading {
-      font-size: 2.8rem;
-    }
-    .about__info__heading {
-      font-size: 3rem;
-    }
-  }
+
 `;
   return (
     <AboutPageStyles>
