@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState } from 'react';
-import sending from '../../assets/images/sending.gif'
+/* import sending from '../../assets/images/sending.gif'
 import PersonIcon from '@material-ui/icons/Person';
-/* import EmailIcon from '@material-ui/icons/Email'; */
+import EmailIcon from '@material-ui/icons/Email';
 import BusinessIcon from '@material-ui/icons/Business';
-import SubjectIcon from '@material-ui/icons/Subject';
+import SubjectIcon from '@material-ui/icons/Subject'; */
 import axios from 'axios'
 import './form.css'
 
@@ -16,7 +16,7 @@ function Form() {
   const [name, setName] = useState('')
   const [subject, setSubject] = useState('')
   const [company, setCompany] = useState('')
-  const [loading, setLoading] = useState(false)
+
 
   function resetForm() {
     setEmail('');
@@ -26,13 +26,11 @@ function Form() {
     setCompany('');
   }
   const handleRequest = async (e) => {
-  
+
     if (email && company && name && subject !== "") {
       if (message !== "") {
         e.preventDefault()
-        setLoading(true)
         console.log({ email, message, name, subject, company })
-
         const body = {
           email,
           message,
@@ -40,19 +38,16 @@ function Form() {
           name,
           company
         }
-
         await axios.post('https://morning-woodland-47559.herokuapp.com/mail', body, {
           headers: {
             'Content-type': 'application/json'
           }
         }).then((res) => {
           alert('Email Sent Successfully. I will text you back as soon as posible')
-          setLoading(false)
           console.log(res)
           resetForm()
         }).catch((err) => {
           console.log(err)
-          setLoading(false)
         })
       } else {
         alert('Compose Email')
@@ -89,6 +84,67 @@ function Form() {
   }
   return (
     <form onSubmit={handleRequest} method="post">
+      <div className="form-group" id="contact-form">
+        <label htmlFor="name">
+          Your Name
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">
+          Company
+          <input
+            type="text"
+            id="company"
+            name="company"
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">
+          Subject
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className="form-group">
+        <label htmlFor="message">
+          Your message
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </label>
+      </div>
+      <div>
+        <button
+          onClick={handleRequest} type="submit" >Send</button>
+      </div>
+    </form>
+  )
+}
+export default Form
+
+
+
+//// --------------------------- Old Form ---------------------------------
+{/* <form onSubmit={handleRequest} method="post">
       <div className="form">
         <div className="form__wrapper">
           <div className="form__title">
@@ -127,7 +183,7 @@ function Form() {
                   />
                 </div>
               </div>
-       {/*        <div className="form__containerItem">
+           <div className="form__containerItem">
                 <div className="form__containerItemName">
                   <label>Email</label>
                   <EmailIcon />
@@ -142,7 +198,7 @@ function Form() {
                     placeholder="Enter Your valid Email"
                   />
                 </div>
-              </div> */}
+              </div> 
               <div className="form__containerItem">
                 <div className="form__containerItemName">
                   <label>Company</label>
@@ -204,7 +260,7 @@ function Form() {
                     placeholder="Enter Content from here..."
                   />
                 </div>
-              </div> */}
+              </div>
               <div>
                   <button
                     disabled={loading}
@@ -214,8 +270,4 @@ function Form() {
           </div>
         </div>
       </div>
-    </form>
-  )
-}
-
-export default Form
+    </form> */}
