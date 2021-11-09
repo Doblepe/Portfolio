@@ -107,6 +107,9 @@ export default function About() {
   @media only screen and (max-width: 768px) {
   font-size: 1.2rem;
 }
+P{
+  font-size: 1.2rem;
+}
 
 `;
   return (
@@ -162,10 +165,6 @@ export default function About() {
            {/*  <PText>Agiles, Scrum</PText> */}
             </div>
           </div>
-          {/* <div className="about__info__item">
-            <h1 className="about__info__heading"><span>Experiences</span></h1>
-            <h5>I'm still looking for my first chance on the developement world</h5>
-          </div> */}
         </div>
       </div>
       <Map />
