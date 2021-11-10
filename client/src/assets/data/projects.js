@@ -19,10 +19,10 @@ const projects = [
     id: uuidv4(),
     name: 'Portafolio',
     desc:
-      'This is the code for these page.',
+      'This is the code for actual page.',
     img: portfolio,
     git: 'https://github.com/Doblepe/Portfolio/tree/master',
-    link: '',
+    link: "",
   },
   {
     id: uuidv4(),
@@ -30,8 +30,8 @@ const projects = [
     desc:
       'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
     img: CoinTrackerImg,
-    git: 'https://github.com/Doblepe/La-Tienda',
-    link: 'https://la-tienda.netlify.app/',
+    git: '',
+    link: '',
   },
   {
     id: uuidv4(),

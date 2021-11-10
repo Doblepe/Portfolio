@@ -19,7 +19,7 @@ const ProjectStyle = styled.div`
     position: relative;
     width: 300px;
     margin-top: 5rem;
-    border: solid var(--green)
+    border: solid var(--green);
   }
   .projects__searchBar input {
     width: 100%;
@@ -91,6 +91,8 @@ export default function Projects() {
                 title={item.name}
                 desc={item.desc}
                 img={item.img}
+                link={item.link}
+                git={item.git}
               />
             ))}
           </div>

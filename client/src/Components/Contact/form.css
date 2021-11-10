@@ -34,4 +34,5 @@ button[type='submit'] {
   padding: 1rem 4rem;
   border-radius: 8px;
   cursor: pointer;
+  margin-bottom: 3rem;
 }

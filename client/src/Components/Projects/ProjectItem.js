@@ -49,7 +49,7 @@ export default function ProjectItem({
   title = 'Project Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   git = 'Lorem Ipsum is simply dummy text o',
-  link = 'Lorem Ipsum is simply dummy text o'
+  link = ''
 }) {
   return (
     <ProjectItemStyles>
@@ -62,8 +62,8 @@ export default function ProjectItem({
         </Link>
         <p className="projectItem__desc">{desc}</p>
         <div className="projectItem__links">
-          <a href={git} target="_blank" rel='noreferrer' > <i class="fab fa-github-square fa-3x"></i></a>
-          {{link} === '' ? <i></i> : <a href={link} target="_blank" rel='noreferrer'> <i class="fas fa-external-link-square-alt fa-3x"></i></a>}
+          <a href={git} target="_blank" rel='noreferrer' > <i className="fab fa-github-square fa-3x"></i></a>
+          {{link} === '' ? null : <a href={link} target="_blank" rel='noreferrer'> <i className="fas fa-external-link-square-alt fa-3x"></i></a>}
         </div>
       </div>
     </ProjectItemStyles>
