@@ -107,7 +107,7 @@ export default function About() {
   @media only screen and (max-width: 768px) {
   font-size: 1.2rem;
 }
-P{
+p{
   font-size: 1.2rem;
 }
 
