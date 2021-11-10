@@ -1,9 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
 import tutienda from '../images/latienda.png';
 import portfolio from '../images/portafolio.png';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+
 
 const projects = [
   {
@@ -24,7 +22,7 @@ const projects = [
     git: 'https://github.com/Doblepe/Portfolio/tree/master',
     link: "",
   },
-  {
+ /*  {
     id: uuidv4(),
     name: 'Coin Tracker',
     desc:
@@ -50,7 +48,7 @@ const projects = [
     img: ProjectImg,
     git: 'https://github.com/Doblepe/La-Tienda',
     link: 'https://la-tienda.netlify.app/',
-  },
+  }, */
 ];
 
 export default projects;
