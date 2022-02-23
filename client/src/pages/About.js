@@ -111,16 +111,16 @@ export default function About() {
               <p className="about__subheading">
                 Hi, I am <span>Víctor Pérez</span>
               </p>
-              <h2 className="about__heading">A Full Stack JR JavaScript Developer</h2>
+              <h2 className="about__heading">A Junior Full Stack Developer</h2>
               <div className="about__info">
-              <PText>
-                My name is Víctor and after the becoming of the pandemy I decided to change my professional career. I've worked in different jobs, but I couldn't find that one which would fit with my vital features until I found out the wonderful world of programming. Development and programming have changed the way i see the world, so I am looking for my first profesional opportunity in the Web Development universe.
-                <br />
-                <br />
-                My vision is to make the world a better place. Nowadays almost everything is becoming better than ever. It is time for us to create better stuff that helps the world to become a better place.
-              </PText>
+                <PText>
+                  My name is Víctor and after the becoming of the pandemy I decided to change my professional career. I've worked in different jobs, but I couldn't find that one which would fit with my vital features until I found out the wonderful world of programming. Development and programming have changed the way i see the world, so I am looking for my first profesional opportunity in the Web Development universe.
+                  <br />
+                  <br />
+                  My vision is to make the world a better place. Nowadays almost everything is becoming better than ever. It is time for us to create better stuff that helps the world to become a better place.
+                </PText>
               </div>
-            {/*   <Button btnText="Download CV" btnLink="#" /> */}
+              {/*   <Button btnText="Download CV" btnLink="#" /> */}
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
@@ -130,30 +130,33 @@ export default function About() {
             <div className="about__info__item">
               <h1 className="about__info__heading">Education</h1>
               <ul className="education_section">
-              <li>JavaScript Full Stack Developer course on <a href="http://cursos.bbkbootcamp.com/?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbQcvt29TMEJ8eHRgVsS7aQOgNgs-KxJCEIV_bJcLF7qoeNsuOBDUDhoCwIUQAvD_BwE" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></li>
-            <li>Desarrollo de aplicaciones con Angular on <a href="https://formacion.ipartek.com/"> Ipartek.</a></li>
-           <li> Also autodidactic learning.</li>
-            </ul>
+                <li>JavaScript Full Stack Developer course on <a href="http://cursos.bbkbootcamp.com/?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbQcvt29TMEJ8eHRgVsS7aQOgNgs-KxJCEIV_bJcLF7qoeNsuOBDUDhoCwIUQAvD_BwE" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></li>
+                <li>Desarrollo de aplicaciones con Angular on <a href="https://formacion.ipartek.com/"> Ipartek.</a></li>
+                <li> Also autodidactic learning.</li>
+              </ul>
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
               <h3>FrontEnd</h3>
               <div className="icons_box">
-              <i className="fab fa-html5 fa-5x"></i>
-              <i className="fab fa-react fa-5x"></i>
-              <i className="fab fa-angular fa-5x"></i>
-              <i className="fab fa-css3 fa-5x"></i>
-              <i className="fab fa-js-square fa-5x"></i>
-              <i className="fab fa-bootstrap fa-5x"></i>
+                <i className="fab fa-html5 fa-5x"></i>
+                <i className="fab fa-react fa-5x"></i>
+                <i className="fab fa-angular fa-5x"></i>
+                <i className="fab fa-css3 fa-5x"></i>
+                <i className="fab fa-js-square fa-5x"></i>
+                <i className="fab fa-bootstrap fa-5x"></i>
               </div>
-            <h3>BackEnd</h3>
-            <div className="icons_box">
-            <i className="fab fa-node fa-5x"></i>
-            </div>
-            <h3>Also</h3>
-            <div className="icons_box">
-            <i className="fab fa-github-square fa-5x"></i>
-            </div>
+              <h3>BackEnd</h3>
+              <div className="icons_box">
+                <i className='fab fa-php fa-5x'></i>
+                <i className="fab fa-node fa-5x"></i>
+              </div>
+              <h3>Experience</h3>
+              <div className="icons_box">
+                <ul className="education_section">
+                  <li>I've worked for three months developing at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions.</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

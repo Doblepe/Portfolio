@@ -24,10 +24,11 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__title {
     font-size: 2.2rem;
-    color: var(--green)
+    color: var(--green);
+    font-weight: 500;
   }
   .projectItem__desc {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
@@ -63,7 +64,7 @@ export default function ProjectItem({
         <p className="projectItem__desc">{desc}</p>
         <div className="projectItem__links">
           <a href={git} target="_blank" rel='noreferrer' > <i className="fab fa-github-square fa-3x"></i></a>
-          {{link} === '' ? null : <a href={link} target="_blank" rel='noreferrer'> <i className="fas fa-external-link-square-alt fa-3x"></i></a>}
+          {{ link } === '' ? null : <a href={link} target="_blank" rel='noreferrer'> <i className="fas fa-external-link-square-alt fa-3x"></i></a>}
         </div>
       </div>
     </ProjectItemStyles>
