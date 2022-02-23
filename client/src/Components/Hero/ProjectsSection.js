@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
 import ProjectItem from '../Projects/ProjectItem';
 import SectionTitle from '../Reusable/SectionTitle';
 import projects from '../../assets/data/projects';
-SwiperCore.use([Navigation]);
+
 
 const ProjectSectionStyle = styled.div`
  background-color: var(--dark-bg);
@@ -58,7 +56,7 @@ const ProjectSectionStyle = styled.div`
 `;
 
 export default function ProjectsSection() {
-  
+
   return (
     <ProjectSectionStyle>
       <div className="container">
