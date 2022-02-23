@@ -136,6 +136,7 @@ export default function About() {
                 <li>JavaScript Full Stack Developer course on <a href="http://cursos.bbkbootcamp.com/?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbQcvt29TMEJ8eHRgVsS7aQOgNgs-KxJCEIV_bJcLF7qoeNsuOBDUDhoCwIUQAvD_BwE" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></li>
                 <li>Desarrollo de aplicaciones con Angular on <a href="https://formacion.ipartek.com/"> Ipartek.</a></li>
                 <li> Also autodidactic learning.</li>
+
               </ul>
             </div>
             <div className="about__info__item">
