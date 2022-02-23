@@ -63,6 +63,9 @@ const AboutPageStyles = styled.div`
   .about__info__item {
     margin-bottom: 5rem;
   }
+  .about__info__item i{
+   font-size: 5rem;
+  }
   .about__info__heading {
     font-size: 3.6rem;
     text-transform: uppercase;
@@ -139,17 +142,22 @@ export default function About() {
               <h1 className="about__info__heading">My Skills</h1>
               <h3>FrontEnd</h3>
               <div className="icons_box">
-                <i className="fab fa-html5 fa-5x"></i>
-                <i className="fab fa-react fa-5x"></i>
-                <i className="fab fa-angular fa-5x"></i>
-                <i className="fab fa-css3 fa-5x"></i>
-                <i className="fab fa-js-square fa-5x"></i>
-                <i className="fab fa-bootstrap fa-5x"></i>
+                <i class="devicon-html5-plain"></i>
+                <i class="devicon-react-original"></i>
+                <i class="devicon-angularjs-plain"></i>
+                <i class="devicon-css3-plain"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-bootstrap-plain"></i>
               </div>
               <h3>BackEnd</h3>
               <div className="icons_box">
-                <i className='fab fa-php fa-5x'></i>
-                <i className="fab fa-node fa-5x"></i>
+                <i class="devicon-nodejs-plain-wordmark"></i>
+                <i class="devicon-mongodb-plain-wordmark"></i>
+                <i class="devicon-php-plain"></i>
+                <i class="devicon-symfony-original"></i>
+                <i class="devicon-phpstorm-plain"></i>
+                <i class="devicon-apache-plain"></i>
+                <i class="devicon-mysql-plain-wordmark"></i>
               </div>
               <h3>Experience</h3>
               <div className="icons_box">
