@@ -4,7 +4,12 @@ import styled from 'styled-components';
 import ProjectImg from '../../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
+.card__container{
+  border: solid 3px var(--green);
+  padding: 1.5rem;
+  background-color: var(--deep-dark)
 
+}
   .projectItem__img {
     width: 100%;
     height: 400px;
@@ -54,17 +59,18 @@ export default function ProjectItem({
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
-        <img src={img} alt="project img" />
-      </Link>
-      <div className="projectItem__info">
-        <Link to="#">
-          <h3 className="projectItem__title">{title}</h3>
+      <div className='card__container'>
+        <Link to="/projects" className="projectItem__img">
+          <img src={img} alt="project img" />
         </Link>
-        <p className="projectItem__desc">{desc}</p>
-        <div className="projectItem__links">
-          <a href={git} target="_blank" rel='noreferrer' > <i className="fab fa-github-square fa-3x"></i></a>
-          {{ link } === '' ? null : <a href={link} target="_blank" rel='noreferrer'> <i className="fas fa-external-link-square-alt fa-3x"></i></a>}
+        <div className="projectItem__info">
+          <Link to="#">
+            <h3 className="projectItem__title">{title}</h3>
+          </Link>
+          <p className="projectItem__desc">{desc}</p>
+          <div className="projectItem__links">
+            <a href={git} target="_blank" rel='noreferrer' > <i className="fab fa-github-square fa-3x"></i></a>
+          </div>
         </div>
       </div>
     </ProjectItemStyles>

@@ -89,6 +89,7 @@ export default function AboutSection() {
             <Button btnText="Works" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />
           </div>
+
         </div>
         <div className="aboutSection__right">
           <img className="aboutImg" src={AboutImg} alt="Img" />
