@@ -9,7 +9,9 @@ const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
   background-color: var(--dark-bg);
   color: white;
-  padding: 10rem 0;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 1.3em;
   font-family: 'Raleway', sans-serif;
   a{
     color: white;
@@ -23,6 +25,7 @@ const AboutPageStyles = styled.div`
   .education_section{
     font-size: 2rem;
     gap:2rem;
+    font-size: 1.8rem;
   }
   .left {
     flex: 3;
@@ -42,6 +45,9 @@ const AboutPageStyles = styled.div`
   .about__heading {
     font-size: 3.6rem;
     margin-bottom: 3rem;
+    line-height: 1.3em;
+
+
   }
   .about__info {
     margin-bottom: 4rem;
@@ -69,7 +75,7 @@ const AboutPageStyles = styled.div`
   .about__info__heading {
     font-size: 3.6rem;
     text-transform: uppercase;
-  color: var(--green);
+    color: var(--green);
   }
   .icons_box{
     display: flex;
@@ -78,6 +84,7 @@ const AboutPageStyles = styled.div`
     padding:3rem 
   }
   @media only screen and (max-width: 768px) {
+    font-size: 1.4rem;
     padding: 10rem 0;
     .icons_box{
     display: flex;
@@ -90,7 +97,8 @@ const AboutPageStyles = styled.div`
     }
     h3 {
     justify-content: center;
-    font-size: 1.2rem;
+    align-content: center;
+    font-size: 2.8rem;
   }
     .about__subheading {
       font-size: 1.8rem;
@@ -99,8 +107,11 @@ const AboutPageStyles = styled.div`
       font-size: 2.8rem;
     }
     .about__info__heading {
-      font-size: 2rem;
+      font-size: 5rem;
     }
+    .about__info__item i{
+   font-size: 3.5rem;
+  }
   }
 `;
 
@@ -136,7 +147,6 @@ export default function About() {
                 <li>JavaScript Full Stack Developer course on <a href="http://cursos.bbkbootcamp.com/?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbQcvt29TMEJ8eHRgVsS7aQOgNgs-KxJCEIV_bJcLF7qoeNsuOBDUDhoCwIUQAvD_BwE" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></li>
                 <li>Desarrollo de aplicaciones con Angular on <a href="https://formacion.ipartek.com/"> Ipartek.</a></li>
                 <li> Also autodidactic learning.</li>
-
               </ul>
             </div>
             <div className="about__info__item">
@@ -156,11 +166,18 @@ export default function About() {
                 <i class="devicon-mongodb-plain-wordmark"></i>
                 <i class="devicon-php-plain"></i>
                 <i class="devicon-symfony-original"></i>
-                <i class="devicon-phpstorm-plain"></i>
                 <i class="devicon-apache-plain"></i>
                 <i class="devicon-mysql-plain-wordmark"></i>
               </div>
-              <h3>Experience</h3>
+              <h3>Others</h3>
+              <div className="icons_box">
+                <i class="devicon-github-original-wordmark"></i>
+                <i class="devicon-vscode-plain-wordmark"></i>
+                <i class="devicon-phpstorm-plain"></i>
+                <i class="devicon-jira-plain"></i>
+                <i class="devicon-linux-plain"></i>
+              </div>
+              <h1 className="about__info__heading">Experience</h1>
               <div className="icons_box">
                 <ul className="education_section">
                   <li>I've worked for three months developing at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions.</a></li>

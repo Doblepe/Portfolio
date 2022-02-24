@@ -14,7 +14,6 @@ const ProjectSectionStyle = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 5rem;
     margin-top: 5rem;
-  }
   @media only screen and (max-width: 768px) {
     
     }
