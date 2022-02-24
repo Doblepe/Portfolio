@@ -13,12 +13,11 @@ export default function Contact() {
 `
   return (
     <ContactSectionStyle>
-    <SectionTitle heading="contact" subheading="get in touch" />
-     {/* <ContactSection /> */}
-     <div className="container">
-     <Form/> 
-     <Map/>
-     </div>
+      <SectionTitle heading="contact" subheading="get in touch" />
+      <div className="container">
+        <Form />
+        <Map />
+      </div>
     </ContactSectionStyle>
   );
 }

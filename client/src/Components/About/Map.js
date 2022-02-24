@@ -8,6 +8,7 @@ const MapStyles = styled.div`
   background-position: center;
   background-size: cover;
   min-height: 400px;
+  margin: 2rem;
   .container {
     position: relative;
     min-height: 400px;

@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../Components/Reusable/PText';
+import Map from '../Components/About/Map';
 import AboutImg from '../assets/images/about_pic.jpg'
 import ContactBanner from '../Components/Contact/ContactBanner';
 
@@ -46,8 +47,6 @@ const AboutPageStyles = styled.div`
     font-size: 3.6rem;
     margin-bottom: 3rem;
     line-height: 1.3em;
-
-
   }
   .about__info {
     margin-bottom: 4rem;
@@ -112,7 +111,14 @@ const AboutPageStyles = styled.div`
     .about__info__item i{
    font-size: 3.5rem;
   }
+  @media only screen and (max-width: 450px) {
+  .about__info__heading {
+      font-size: 3rem;
+    }
+     .about__info__item i{
+   font-size: 3.5rem;
   }
+  }}
 `;
 
 export default function About() {
@@ -185,6 +191,7 @@ export default function About() {
               </div>
             </div>
           </div>
+          <Map />
         </div>
         <ContactBanner />
       </AboutPageStyles>

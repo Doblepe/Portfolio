@@ -26,6 +26,22 @@ const projects = [
     git: 'https://github.com/Doblepe/Portfolio/tree/master',
     link: '',
   },
+  {
+    name: "Mock project",
+    desc:
+      'Here I am going to deploy an Angular & Ionic app ',
+    img: tutienda,
+    git: 'https://github.com/Doblepe/Portfolio/tree/master',
+    link: '',
+  },
+  {
+    name: "Mock project",
+    desc:
+      'Here I am going to deploy an Angular & Ionic app ',
+    img: tutienda,
+    git: 'https://github.com/Doblepe/Portfolio/tree/master',
+    link: '',
+  },
 ];
 
 export default projects;

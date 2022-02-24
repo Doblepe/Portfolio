@@ -30,7 +30,7 @@ function Form() {
     if (email && company && name && subject !== "") {
       if (message !== "") {
         e.preventDefault()
-        console.log({ email, message, name, subject, company })
+        /*    console.log({ email, message, name, subject, company }) */
         const body = {
           email,
           message,
@@ -52,7 +52,6 @@ function Form() {
       } else {
         alert('Compose Email')
       }
-
     } else {
       alert('Please fill all required filled')
     }
