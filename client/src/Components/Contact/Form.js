@@ -97,7 +97,7 @@ function Form() {
       </div>
       <div className="form-group">
         <label htmlFor="email">
-          Company
+          Your Email
           <input
             type="text"
             id="company"

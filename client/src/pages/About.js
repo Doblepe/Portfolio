@@ -5,6 +5,7 @@ import PText from '../Components/Reusable/PText';
 import Map from '../Components/About/Map';
 import AboutImg from '../assets/images/about_pic.jpg'
 import ContactBanner from '../Components/Contact/ContactBanner';
+import Button from '../Components/Reusable/Button';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -140,7 +141,7 @@ export default function About() {
                   My vision is to make the world a better place. Nowadays almost everything is becoming better than ever. It is time for us to create better stuff that helps the world to become a better place.
                 </PText>
               </div>
-              {/*   <Button btnText="Download CV" btnLink="#" /> */}
+              <Button btnText="Download CV" btnLink="#" />
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />

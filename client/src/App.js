@@ -1,5 +1,6 @@
 import Home from './pages/Home';
 import './App.css';
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -7,14 +8,22 @@ import Contact from './pages/Contact';
 import NavMenu from './Components/Reusable/NavMenu';
 import Footer from './Components/Reusable/Footer';
 import SmoothScrollBar from './Components/Reusable/SmoothScrollbar'
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, GlobalStyles } from './styles/Theme';
 
 
 function App() {
-  return (
 
-    <Router>
-      <NavMenu />
-      <SmoothScrollBar /> 
+  const [theme, setTheme] = useState("light");
+  const themeToggler = () => {
+    theme === 'light' ? setTheme("dark") : setTheme("light");
+  }
+  return (
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      <Router>
+        <NavMenu />
+        <SmoothScrollBar />
         <Switch>
           <Route path='/about'>
             <About />
@@ -29,10 +38,11 @@ function App() {
             <Home />
           </Route>
         </Switch>
-          <br/> 
+        <br />
         <Footer />
-  
-    </Router>
+        <button onClick={() => themeToggler()}>Change Color</button>
+      </Router>
+    </ThemeProvider >
 
   );
 }

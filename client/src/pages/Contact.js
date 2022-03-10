@@ -5,7 +5,10 @@ import SectionTitle from '../Components/Reusable/SectionTitle';
 import styled from 'styled-components';
 export default function Contact() {
   const ContactSectionStyle = styled.div`
-  background-color: var(--dark-bg);
+ /*  background-color: var(--dark-bg); */
+ background-color: ${(props) =>
+      props.theme.background
+    };
   color: white;
   padding: 10rem 0;
   font-family: 'Raleway', sans-serif;

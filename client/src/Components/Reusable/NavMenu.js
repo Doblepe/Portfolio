@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
@@ -91,6 +91,10 @@ const NavStyles = styled.nav`
 
 export default function NavMenu() {
   const [showNav, setShowNav] = useState(false);
+  const [theme, setTheme] = useState("light");
+  const themeToggler = () => {
+    theme === 'light' ? setTheme("dark") : setTheme("light");
+  }
   return (
     <NavStyles>
       <div
@@ -157,6 +161,13 @@ export default function NavMenu() {
           >
             Contact
           </NavLink>
+        </li>
+        <li>
+          <button onClick={() => { themeToggler() }}
+
+          >
+            Change color
+          </button>
         </li>
       </ul>
     </NavStyles>

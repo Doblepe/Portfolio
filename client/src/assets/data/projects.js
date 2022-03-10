@@ -1,6 +1,7 @@
 
 import tutienda from '../images/latienda.png';
 import portfolio from '../images/portafolio.png';
+import Api_platform from '../images/API-PLATFORM.png'
 const projects = [
   {
     name: 'Tu Tienda',
@@ -12,8 +13,7 @@ const projects = [
   },
   {
     name: 'Portafolio',
-    desc:
-      'This is the code for actual page.',
+    desc: 'This is the code for actual page.',
     img: portfolio,
     git: 'https://github.com/Doblepe/Portfolio/tree/master',
     link: "",
@@ -22,7 +22,7 @@ const projects = [
     name: "Mock project",
     desc:
       'Here I am going to deploy an Angular & Ionic app ',
-    img: tutienda,
+    img: Api_platform,
     git: 'https://github.com/Doblepe/Portfolio/tree/master',
     link: '',
   },

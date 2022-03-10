@@ -7,8 +7,10 @@ import AboutImg from '../../assets/images/about_pic.jpg';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
-  background-color: var(--dark-bg);
-  color: white;
+   background-color: ${(props) =>
+    props.theme.body
+  };
+  color: ${(props) => props.theme.text};
   .container {
     display: flex;
     align-items: center;
