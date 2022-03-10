@@ -1,6 +1,6 @@
 import Home from './pages/Home';
 import './App.css';
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -22,7 +22,7 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Router>
-        <NavMenu />
+        <NavMenu themeToggler={themeToggler} />
         <SmoothScrollBar />
         <Switch>
           <Route path='/about'>
@@ -40,7 +40,6 @@ function App() {
         </Switch>
         <br />
         <Footer />
-        <button onClick={() => themeToggler()}>Change Color</button>
       </Router>
     </ThemeProvider >
 
