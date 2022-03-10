@@ -9,8 +9,12 @@ import Button from '../Components/Reusable/Button';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
-  background-color: var(--dark-bg);
-  color: white;
+  background-color: ${(props) =>
+    props.theme.bg
+  };;
+  color: ${(props) =>
+    props.theme.text
+  };
   margin: 0 auto;
   font-size: 1.8rem;
   line-height: 1.3em;
@@ -62,7 +66,9 @@ const AboutPageStyles = styled.div`
   }
   .about__info__items {
     margin-top: 5rem;
-    background-color: var(--deep-dark);
+background-color: ${(props) =>
+    props.theme.bg_2
+  };
     border: solid 2px var(--green);
     padding: 2rem;
   }

@@ -10,13 +10,20 @@ import "swiper/css/pagination";
 
 
 const ProjectSectionStyle = styled.div`
- background-color: var(--dark-bg);
-  color: white;
+   background-color: ${(props) =>
+    props.theme.bg
+  };
+  color: ${(props) =>
+    props.theme.text
+  };;
   padding: 10rem 0;
   .swiper {
   width: 100%;
   height: 100%;
-  background-color: var(--dark-bg);
+  background-color: ${(props) =>
+    props.theme.bg_2
+  };
+  padding: 3rem;
 }
 .swiper-slide {
   text-align: center;

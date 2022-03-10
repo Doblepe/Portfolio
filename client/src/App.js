@@ -9,7 +9,8 @@ import NavMenu from './Components/Reusable/NavMenu';
 import Footer from './Components/Reusable/Footer';
 import SmoothScrollBar from './Components/Reusable/SmoothScrollbar'
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, GlobalStyles } from './styles/Theme';
+import { lightTheme, darkTheme } from './styles/Theme';
+import GlobalStyles from './styles/GlobalStyle'
 
 
 function App() {

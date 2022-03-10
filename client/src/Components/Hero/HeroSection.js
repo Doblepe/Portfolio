@@ -8,7 +8,9 @@ function HeroSection() {
 
   const HeroStyles = styled.div`
 .HeroContainer {
-background: #0c0c0c;
+background-color: ${(props) =>
+      props.theme.bg
+    };
 display: flex;
 justify-content: center;
 align-items: center;

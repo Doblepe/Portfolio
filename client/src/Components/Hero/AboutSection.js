@@ -8,7 +8,7 @@ import AboutImg from '../../assets/images/about_pic.jpg';
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
    background-color: ${(props) =>
-    props.theme.body
+    props.theme.bg
   };
   color: ${(props) => props.theme.text};
   .container {

@@ -6,7 +6,9 @@ import PText from '../Reusable/PText'
 
 const ItemStyles = styled.div`
   padding: 2rem;
-  background-color: var(--deep-dark);
+  background-color: ${(props) =>
+    props.theme.bg
+  };
   display: flex;
   align-items: center;
   gap: 2rem;

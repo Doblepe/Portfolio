@@ -7,7 +7,9 @@ const ProjectItemStyles = styled.div`
 .card__container{
   border: solid 3px var(--green);
   padding: 1.5rem;
-  background-color: var(--deep-dark)
+  background-color: ${(props) =>
+    props.theme.bg
+  }
 
 }
   .projectItem__img {
@@ -16,14 +18,18 @@ const ProjectItemStyles = styled.div`
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
-    border: 3px solid var(--gray-2);
+    border: 3px solid ${(props) =>
+    props.theme.text
+  };
     img {
       height: 100%;
     }
   }
   .projectItem__info {
-    margin-top: 1rem;
-    background-color: var(--deep-dark);
+    margin-top: 2rem;
+      background-color: ${(props) =>
+    props.theme.bg
+  };
     padding: 1rem;
     border-radius: 12px;
   }

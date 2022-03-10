@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
-
 const NavStyles = styled.nav`
   position: fixed;
   z-index: 100;
@@ -11,8 +10,8 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-     background-color: ${(props) =>
-    props.theme.body
+  background-color: ${(props) =>
+    props.theme.bg_2
   };
   ul {
     max-width: 1200px;
@@ -24,7 +23,7 @@ const NavStyles = styled.nav`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: #5cb85c;
+        background-color: ${(props) => props.theme.bg_2};
       }
     }
     a {
@@ -36,7 +35,7 @@ const NavStyles = styled.nav`
       outline: none;
     }
     .active {
-      color: var(--white);
+      color: ${(props) => props.theme.text};
     }
   }
   .theme_button{
@@ -46,7 +45,7 @@ const NavStyles = styled.nav`
       font-size: 2rem;
       color: var(--gray-1);
       outline: none;
-     background-color: gray;
+     background-color: ${(props) => props.theme.bg};
   }
   .mobile-menu-icon {
     position: absolute;

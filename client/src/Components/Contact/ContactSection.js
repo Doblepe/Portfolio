@@ -6,8 +6,12 @@ import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from '../Reusable/SectionTitle';
 
 const ContactSectionStyle = styled.div`
-  background-color: var(--dark-bg);
-  color: white;
+     background-color: ${(props) =>
+    props.theme.bg
+  };
+  color: ${(props) =>
+    props.theme.text
+  };
   padding: 10rem 0;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -65,7 +69,7 @@ export default function ContactSection() {
             <ContactInfoItem text="Bilbao, Basque Country, Spain" />
           </div>
           <div className="right">
-            <Form/>
+            <Form />
           </div>
         </div>
       </div>

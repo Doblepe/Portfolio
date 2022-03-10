@@ -5,10 +5,16 @@ import PText from '../Reusable/PText';
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
-  background-color: var(--dark-bg);
-  color: white;
+  background-color: ${(props) =>
+    props.theme.bg
+  };
+  color: ${(props) =>
+    props.theme.text
+  };
   .contactBanner__wrapper {
-    background-color: var(--deep-dark);
+    background-color: ${(props) =>
+    props.theme.bg_2
+  };
     border-radius: 12px;
     padding: 5rem 0rem;
     text-align: center;

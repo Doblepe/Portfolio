@@ -4,9 +4,13 @@ import FooterCol from './FooterCol';
 import PText from './PText';
 
 const FooterStyle = styled.div`
-  background-color: var(--dark-bg);
+  background-color: ${(props) =>
+    props.theme.bg
+  };;
   padding-top: 10rem;
-  color: white;
+  color: ${(props) =>
+    props.theme.text
+  };
   font-size: 1.2rem;
   .container {
     display: flex;
@@ -26,7 +30,9 @@ const FooterStyle = styled.div`
     color: var(--green)
   }
   .copyright {
-    background-color: var(--dark-bg);
+    background-color: ${(props) =>
+    props.theme.bg
+  };
     color: var(--green);
     text-align: left;
     padding: 1rem 0;

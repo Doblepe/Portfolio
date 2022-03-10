@@ -13,7 +13,9 @@ const ColStyle = styled.div`
   }
   a {
     font-size: 1.8rem;
-    color: white;
+    color:${(props) =>
+    props.theme.text
+  };
   }
 `;
 

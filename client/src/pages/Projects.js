@@ -7,8 +7,12 @@ import ProjectItem from '../Components/Projects/ProjectItem';
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
-  background-color: var(--dark-bg);
-  color: white;
+  background-color:${(props) =>
+    props.theme.bg
+  };
+  color: ${(props) =>
+    props.theme.text
+  };
   .projects__allItems {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -25,7 +29,9 @@ const ProjectStyle = styled.div`
     width: 100%;
     font-size: 2rem;
     padding: 0.8rem;
-    color: var(--black);
+    color:${(props) =>
+    props.theme.text
+  };
     border-radius: 6px;
     outline: none;
     border: none;
@@ -36,7 +42,9 @@ const ProjectStyle = styled.div`
     right: 1rem;
   }
   .projects__searchBar .searchIcon path {
-    color: var(--deep-dark);
+    color: ${(props) =>
+    props.theme.text
+  };
   }
   @media only screen and (max-width: 768px) {
     .projects__searchBar,
