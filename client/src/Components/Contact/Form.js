@@ -7,6 +7,47 @@ import BusinessIcon from '@material-ui/icons/Business';
 import SubjectIcon from '@material-ui/icons/Subject'; */
 import axios from 'axios'
 import './form.css'
+import styled from 'styled-components';
+
+const FormStyle = styled.div`
+form{
+  width: 100%;
+}
+.form-group {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+label {
+  font-size: 1.8rem;
+}
+input,
+textarea {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1.2rem;
+  color: var(--gray-1);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+textarea {
+  min-height: 250px;
+  resize: vertical;
+}
+button[type='submit'] {
+ 
+  color: var(--black);
+  font-size: 2rem;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+`;
 
 
 function Form() {
@@ -14,7 +55,6 @@ function Form() {
   const [email, setEmail] = useState('vicdobleperez@gmail.com')
   const [message, setMessage] = useState('')
   const [name, setName] = useState('')
-  const [subject, setSubject] = useState('')
   const [company, setCompany] = useState('')
 
 
@@ -22,19 +62,16 @@ function Form() {
     setEmail('');
     setMessage('');
     setName('');
-    setSubject('');
     setCompany('');
   }
   const handleRequest = async (e) => {
 
-    if (email && company && name && subject !== "") {
+    if (email && company && name !== "") {
       if (message !== "") {
         e.preventDefault()
-        /*    console.log({ email, message, name, subject, company }) */
         const body = {
           email,
           message,
-          subject,
           name,
           company
         }
@@ -82,48 +119,50 @@ function Form() {
     // }
   }
   return (
-    <form onSubmit={handleRequest} method="post">
-      <div className="form-group" id="contact-form">
-        <label htmlFor="name">
-          Your Name
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-      </div>
-      <div className="form-group">
-        <label htmlFor="email">
-          Your Email
-          <input
-            type="text"
-            id="company"
-            name="company"
-            value={company}
-            onChange={(e) => setCompany(e.target.value)}
-          />
-        </label>
-      </div>
-      <div className="form-group">
-        <label htmlFor="message">
-          Your message
-          <textarea
-            type="text"
-            id="message"
-            name="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-        </label>
-      </div>
-      <div>
-        <button
-          onClick={handleRequest} type="submit" >Send</button>
-      </div>
-    </form>
+    <FormStyle>
+      <form onSubmit={handleRequest} method="post">
+        <div className="form-group" id="contact-form">
+          <label htmlFor="name">
+            Your Name
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">
+            Your Email
+            <input
+              type="text"
+              id="company"
+              name="company"
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
+            />
+          </label>
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">
+            Your message
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </label>
+        </div>
+        <div>
+          <button
+            onClick={handleRequest} type="submit" >Send</button>
+        </div>
+      </form>
+    </FormStyle>
   )
 }
 export default Form

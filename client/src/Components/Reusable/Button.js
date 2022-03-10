@@ -6,18 +6,18 @@ const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
     font-size: 1.2rem;
-    background-color: ${(props) => props.theme.bg};
+    background-color: ${(props) => props.theme.bg_2};
     padding: 0.7em 2em;
     border: 2px solid var(--gray-1);
     border-radius: 8px;
     display: inline-block;
-    color: ${(props) => (props.outline ? 'var(--gary-1)' : 'black')};
+    color: ${(props) => props.theme.text};
   }
-  @media only screen and (max-width: 768px) {
+@media only screen and(max - width: 768px) {
     .button {
-      font-size: 1.8rem;
-    }
+    font - size: 1.8rem;
   }
+}
 `;
 
 export default function Button({

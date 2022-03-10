@@ -5,7 +5,6 @@ import PText from '../Components/Reusable/PText';
 import Map from '../Components/About/Map';
 import AboutImg from '../assets/images/about_pic.jpg'
 import ContactBanner from '../Components/Contact/ContactBanner';
-import Button from '../Components/Reusable/Button';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;

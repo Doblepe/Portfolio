@@ -1,5 +1,4 @@
 import Home from './pages/Home';
-import './App.css';
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './pages/About';
