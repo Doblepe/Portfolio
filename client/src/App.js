@@ -20,7 +20,7 @@ function App() {
     theme === 'light' ? setTheme("dark") : setTheme("light");
   }
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === "dark" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Router>
         <NavMenu themeToggler={themeToggler} />

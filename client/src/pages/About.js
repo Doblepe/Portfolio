@@ -147,7 +147,7 @@ export default function About() {
                   My vision is to make the world a better place. Nowadays almost everything is becoming better than ever. It is time for us to create better stuff that helps the world to become a better place.
                 </PText>
               </div>
-              <Button btnText="Download CV" btnLink="#" />
+              {/*  <Button btnText="Download CV" btnLink="#" /> */}
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />

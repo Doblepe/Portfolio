@@ -6,7 +6,7 @@ import PText from './PText';
 const FooterStyle = styled.div`
   background-color: ${(props) =>
     props.theme.bg
-  };;
+  };
   padding-top: 10rem;
   color: ${(props) =>
     props.theme.text

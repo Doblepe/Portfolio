@@ -23,15 +23,11 @@ const ProjectStyle = styled.div`
     position: relative;
     width: 300px;
     margin-top: 5rem;
-    border: solid var(--green);
   }
   .projects__searchBar input {
     width: 100%;
     font-size: 2rem;
     padding: 0.8rem;
-    color:${(props) =>
-    props.theme.text
-  };
     border-radius: 6px;
     outline: none;
     border: none;
@@ -41,10 +37,10 @@ const ProjectStyle = styled.div`
     width: 2rem;
     right: 1rem;
   }
-  .projects__searchBar .searchIcon path {
+ /*  .projects__searchBar .searchIcon path {
     color: ${(props) =>
     props.theme.text
-  };
+  } */;
   }
   @media only screen and (max-width: 768px) {
     .projects__searchBar,

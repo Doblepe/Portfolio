@@ -1,5 +1,4 @@
 // Theme Presets
-import { createGlobalStyle } from "styled-components";
 export const lightTheme = {
     name: "light",
     body: "#FFFFFF",

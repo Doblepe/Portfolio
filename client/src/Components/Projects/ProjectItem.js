@@ -8,9 +8,8 @@ const ProjectItemStyles = styled.div`
   border: solid 3px var(--green);
   padding: 1.5rem;
   background-color: ${(props) =>
-    props.theme.bg
+    props.theme.bg_2
   }
-
 }
   .projectItem__img {
     width: 100%;
