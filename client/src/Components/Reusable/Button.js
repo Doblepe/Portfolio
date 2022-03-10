@@ -6,8 +6,7 @@ const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
     font-size: 1.2rem;
-    background-color: ${(props) =>
-      props.outline ? 'transperant' : 'var(--gray-1)'};
+    background-color: ${(props) => props.theme.bg};
     padding: 0.7em 2em;
     border: 2px solid var(--gray-1);
     border-radius: 8px;

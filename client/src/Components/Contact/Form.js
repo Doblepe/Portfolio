@@ -108,18 +108,6 @@ function Form() {
         </label>
       </div>
       <div className="form-group">
-        <label htmlFor="email">
-          Subject
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-          />
-        </label>
-      </div>
-      <div className="form-group">
         <label htmlFor="message">
           Your message
           <textarea

@@ -13,7 +13,6 @@ textarea {
   width: 100%;
   font-size: 2rem;
   padding: 1.2rem;
-  color: var(--gray-1);
   outline: none;
   border: none;
   border-radius: 8px;
@@ -24,7 +23,6 @@ textarea {
   resize: vertical;
 }
 button[type='submit'] {
-  color: var(--black);
   font-size: 2rem;
   display: inline-block;
   outline: none;
