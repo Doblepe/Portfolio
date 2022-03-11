@@ -28,7 +28,7 @@ const ProjectSectionStyle = styled.div`
 .swiper-slide {
   text-align: center;
   font-size: 1.8rem;
-  background:var(--dark-bg);
+  background:${(props) => props.theme.bg};
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;

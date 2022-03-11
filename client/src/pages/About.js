@@ -42,7 +42,9 @@ const AboutPageStyles = styled.div`
     font-size: 2.2rem;
     margin-bottom: 2rem;
     span {
-      background-color: var(--green);
+      background-color:${(props) =>
+    props.theme.secondary
+  };;
       padding: 0.5rem;
       border-radius: 8px;
     }
@@ -68,7 +70,9 @@ const AboutPageStyles = styled.div`
 background-color: ${(props) =>
     props.theme.bg_2
   };
-    border: solid 2px var(--green);
+    border: solid 2px ${(props) =>
+    props.theme.secondary
+  };;
     padding: 2rem;
   }
   .about__info__item {
@@ -80,7 +84,9 @@ background-color: ${(props) =>
   .about__info__heading {
     font-size: 3.6rem;
     text-transform: uppercase;
-    color: var(--green);
+    color: ${(props) =>
+    props.theme.secondary
+  };;
   }
   .icons_box{
     display: flex;

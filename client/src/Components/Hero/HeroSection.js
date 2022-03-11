@@ -41,7 +41,7 @@ z-index: 1;
   background-color: #ffffff10;
   backdrop-filter:blur(12px);
   -webkit-backdrop-filter:blur(12px);
-  border: solid var(--green) 2px;
+  border: solid ${(props) => props.theme.secondary}) 2px;
   width: 600px;
   position: absolute;
   padding: 3rem 0 3rem 0;

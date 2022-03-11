@@ -27,13 +27,13 @@ const FooterStyle = styled.div`
   .footer__col1__title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: var(--green)
+    color: ${(props) => props.theme.secondary};
   }
   .copyright {
     background-color: ${(props) =>
     props.theme.bg
   };
-    color: var(--green);
+    color: ${(props) => props.theme.secondary};
     text-align: left;
     padding: 1rem 0;
     margin-top: 5rem;

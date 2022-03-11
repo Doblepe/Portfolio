@@ -19,7 +19,7 @@ const MapStyles = styled.div`
     right: 10%;
     bottom: 10%;
     padding: 2rem;
-    background-color: var(--green);
+    background-color: ${(props) => props.theme.secondary};
     opacity:90%;
     width: 100%;
     max-width: 300px;

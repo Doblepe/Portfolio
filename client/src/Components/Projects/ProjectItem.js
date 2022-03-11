@@ -5,7 +5,9 @@ import ProjectImg from '../../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
 .card__container{
-  border: solid 3px var(--green);
+  border: solid 3px ${(props) =>
+    props.theme.secondary
+  };
   padding: 1.5rem;
   background-color: ${(props) =>
     props.theme.bg_2
@@ -18,7 +20,7 @@ const ProjectItemStyles = styled.div`
     overflow: hidden;
     display: inline-block;
     border: 3px solid ${(props) =>
-    props.theme.text
+    props.theme.secondary
   };
     img {
       height: 100%;
@@ -26,7 +28,7 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__info {
     margin-top: 2rem;
-      background-color: ${(props) =>
+    background-color: ${(props) =>
     props.theme.bg
   };
     padding: 1rem;
@@ -34,7 +36,7 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__title {
     font-size: 2.2rem;
-    color: var(--green);
+    color: ${(props) => props.theme.secondary};
     font-weight: 500;
   }
   .projectItem__desc {
@@ -47,7 +49,7 @@ const ProjectItemStyles = styled.div`
     justify-content: space-around;
   }
   .projectItem__links i {
-    color: var(--green)
+    color: ${(props) => props.theme.secondary}
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {

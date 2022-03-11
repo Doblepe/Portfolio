@@ -18,12 +18,13 @@ const NavStyles = styled.nav`
     margin: 0 auto;
     width: 90%;
     text-align: center;
+     border: solid 2px ${(props) => props.theme.secondary};
     li {
       display: inline-block;
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: ${(props) => props.theme.bg_2};
+        background-color: ${(props) => props.theme.secondary};
       }
     }
     a {
@@ -31,7 +32,7 @@ const NavStyles = styled.nav`
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gray-1);
+      color: ${(props) => props.theme.secondary};
       outline: none;
     }
     .active {
@@ -43,13 +44,13 @@ const NavStyles = styled.nav`
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gray-1);
+      color: ${(props) => props.theme.secondary};
       outline: none;
      background-color: ${(props) => props.theme.bg};
   }
   .mobile-menu-icon {
     position: absolute;
-    color: var(--green);
+    color: ${(props) => props.theme.secondary};
     right: 1rem;
     top: 1rem;
     width: 4rem;
@@ -74,7 +75,7 @@ const NavStyles = styled.nav`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: ${(props) => props.theme.bg};
       padding: 2rem;
       width: 90%;
       max-width: 300px;
@@ -87,7 +88,7 @@ const NavStyles = styled.nav`
         width: 3rem;
         margin: 0 0 0 auto;
         cursor: pointer;
-        color: var(--green);
+        color: ${(props) => props.theme.secondary};
         * {
           pointer-events: none;
         }

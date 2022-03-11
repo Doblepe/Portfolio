@@ -27,7 +27,9 @@ const ContactSectionStyle = styled.div`
     content: '';
     width: 2px;
     height: 50%;
-    background-color: var(--gray-1);
+    background-color: ${(props) =>
+    props.theme.bg
+  };
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
