@@ -10,7 +10,7 @@ const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
   background-color: ${(props) =>
     props.theme.bg
-  };;
+  };
   color: ${(props) =>
     props.theme.text
   };
@@ -18,15 +18,16 @@ const AboutPageStyles = styled.div`
   font-size: 1.8rem;
   line-height: 1.3em;
   font-family: 'Raleway', sans-serif;
-  a{
-    color: white;
-  }
-  .top-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
+ .top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+p{font-family: 'Raleway', sans-serif;
+font-size: 1.8rem;
+padding: 2rem 0 0 0;
+}
   .education_section{
     font-size: 2rem;
     gap:2rem;
@@ -61,18 +62,17 @@ const AboutPageStyles = styled.div`
     }
   }
   .right {
-    img {
-      border: 2px solid var(--gray-1);
+    img {border: 2px solid ${(props) => props.theme.secondary};
     }
   }
   .about__info__items {
     margin-top: 5rem;
-background-color: ${(props) =>
+    background-color: ${(props) =>
     props.theme.bg_2
   };
     border: solid 2px ${(props) =>
     props.theme.secondary
-  };;
+  };
     padding: 2rem;
   }
   .about__info__item {
@@ -80,13 +80,26 @@ background-color: ${(props) =>
   }
   .about__info__item i{
    font-size: 5rem;
-  }
+  };
   .about__info__heading {
-    font-size: 3.6rem;
-    text-transform: uppercase;
-    color: ${(props) =>
+  text-transform: uppercase;  
+  font-size: 2.6rem;
+  padding: 2rem 0 1rem 0;
+  color: ${(props) =>
     props.theme.secondary
   };
+   text-align:center;
+  border-bottom: 2px solid ${(props) =>
+    props.theme.secondary
+  };
+  }
+   h3 {
+  font-size: 2.4rem;
+  padding: auto;
+  color: ${(props) =>
+    props.theme.text
+  };
+   text-align:center;
   }
   .icons_box{
     display: flex;
@@ -102,19 +115,46 @@ background-color: ${(props) =>
   };
   margin-top:1em;
   padding: 1.2em;
-  width:250px;
+  width:200px;
   }
-   @media only screen and (max-width: 1200px) {
+   @media only screen and (max-width: 1100px) {
+    .top-section {
+      flex-direction: column;
+      gap: 5rem;
+    }
      font-size: 1.2rem;
   .icons_box{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
   }
-   }
+  .right {
+    flex-wrap: wrap;
+   }img{
+      max-height:400px;    }
+     h3 {
+  font-size: 2rem;
+  padding: 2rem 0 1rem 0;
+  color: ${(props) =>
+    props.theme.text
+  };
+    .aboutSection__left {
+    flex: 4;
+  }
+  .aboutSection__right {
+    flex: 3;
+  }
+}
   @media only screen and (max-width: 768px) {
     font-size: 1.4rem;
-    padding: 10rem 0;
+    padding: 1rem 0;
+      .right {
+    flex-wrap: wrap;
+  
+   }
+     img{
+      max-height:390px;    }
+  }
     .icons_box{
     display: flex;
     flex-wrap: wrap;
@@ -124,11 +164,13 @@ background-color: ${(props) =>
       flex-direction: column;
       gap: 5rem;
     }
-    h3 {
-    justify-content: center;
-    align-content: center;
-    font-size: 2.8rem;
   }
+  h3 {
+  font-size: 1.8rem;
+  padding: 1rem 0 1rem 0;
+  color: ${(props) =>
+    props.theme.text
+  };
     .about__subheading {
       font-size: 1.8rem;
     }
@@ -137,19 +179,34 @@ background-color: ${(props) =>
     }
     .about__info__heading {
       font-size: 5rem;
+      text-align:center;
     }
     .about__info__item i{
    font-size: 3.5rem;
   }
+    .aboutSection__left {
+    flex: 4;
+  }
+  .aboutSection__right {
+    flex: 3;
+  }
+}
   @media only screen and (max-width: 450px) {
   .about__info__heading {
-      font-size: 3rem;
+      font-size: 3.5rem;
+       text-align:center;
     }
      .about__info__item i{
    font-size: 3.5rem;
   }
-  }}
-`;
+    h3 {
+  font-size: 1.8rem;
+  font-family: bold;
+  padding: 2rem 0 1rem 0;
+  color: ${(props) => props.theme.text};
+    }
+  
+  }`;
 
 export default function About(props) {
   return (
@@ -179,11 +236,10 @@ export default function About(props) {
           <div className="about__info__items">
             <div className="about__info__item">
               <h1 className="about__info__heading">Education</h1>
-              <ul className="education_section">
-                <li>JavaScript Full Stack Developer course on <a href="http://cursos.bbkbootcamp.com/?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbQcvt29TMEJ8eHRgVsS7aQOgNgs-KxJCEIV_bJcLF7qoeNsuOBDUDhoCwIUQAvD_BwE" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></li>
-                <li>Desarrollo de aplicaciones con Angular on <a href="https://formacion.ipartek.com/"> Ipartek.</a></li>
-                <li> Also autodidactic learning.</li>
-              </ul>
+              <PText>I've studied Jornalism at the UPV/EHU and also a Master degree on Multimedia Journalism.</PText>
+              <PText>JavaScript Full Stack Developer course on <a href="http://cursos.bbkbootcamp.com/?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbQcvt29TMEJ8eHRgVsS7aQOgNgs-KxJCEIV_bJcLF7qoeNsuOBDUDhoCwIUQAvD_BwE" rel='noreferrer' target='_blank'>BBK Bootcamp.</a></PText>
+              <PText>Desarrollo de aplicaciones con Angular on <a href="https://formacion.ipartek.com/"> Ipartek.</a></PText>
+              <PText> Also autodidactic learning.</PText>
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
@@ -251,7 +307,7 @@ export default function About(props) {
                 <article className='skills_article'>
                   <i class="devicon-mysql-plain-wordmark"></i>
                   <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
-                  <p>Apache</p>
+                  <p>MYSQL</p>
                 </article>
 
               </div>
@@ -282,18 +338,11 @@ export default function About(props) {
                   <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={75} label="75%" />
                   <p>Linux</p>
                 </article>
-
-
-
-
-
-
               </div>
               <h1 className="about__info__heading">Experience</h1>
               <div className="icons_box">
-                <ul className="education_section">
-                  <li>I've worked for three months developing at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions.</a></li>
-                </ul>
+                <PText>I've worked on many different jobs, such as a Journalist, as a comercial, as administrative and also as a Lifeguard.</PText>
+                <PText>On the IT world I worked for three months developing at <a href="http://jamenet.eus/" rel='noreferrer' target='_blank'>Jamenet Sollutions.</a></PText>
               </div>
             </div>
           </div>
