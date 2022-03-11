@@ -65,16 +65,6 @@ const AboutPageStyles = styled.div`
       border: 2px solid var(--gray-1);
     }
   }
-  .skills_article{ 
-   display: inline-block;
-   flex-wrap: column;
-   justify-content: center;
-   border: solid 2px ${(props) =>
-    props.theme.secondary
-  };
-  padding: 1.3rem;
-  width:250px;
-  }
   .about__info__items {
     margin-top: 5rem;
 background-color: ${(props) =>
@@ -96,21 +86,39 @@ background-color: ${(props) =>
     text-transform: uppercase;
     color: ${(props) =>
     props.theme.secondary
-  };;
+  };
   }
   .icons_box{
     display: flex;
-    justify-content: flex-start;
-    gap: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
     padding:3rem 
   }
+  .skills_article{
+   display: inline;
+   flex-direction: column;
+   border: solid 2px ${(props) =>
+    props.theme.secondary
+  };
+  margin-top:1em;
+  padding: 1.2em;
+  width:250px;
+  }
+   @media only screen and (max-width: 1200px) {
+     font-size: 1.2rem;
+  .icons_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+   }
   @media only screen and (max-width: 768px) {
     font-size: 1.4rem;
     padding: 10rem 0;
     .icons_box{
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
   }
     .top-section {
       flex-direction: column;
@@ -156,10 +164,10 @@ export default function About(props) {
               <h2 className="about__heading">A Junior Full Stack Developer</h2>
               <div className="about__info">
                 <PText>
-                  My name is Víctor and after the becoming of the pandemy I decided to change my professional career. I've worked in different jobs, but I couldn't find that one which would fit with my vital features until I found out the wonderful world of programming. Development and programming have changed the way i see the world, so I am looking for my first profesional opportunity in the Web Development universe.
+                  My name is Víctor and after the becoming of the covid-19 pandemy I decided to change my professional career. I've worked in different jobs, but I couldn't find that one which would fit in with my vital objectives until I found the wonderful world of programming.  Digital projects and programming have changed my perspective of life, so I am looking for new profesional opportunities in the Web Development universe.
                   <br />
                   <br />
-                  My vision is to make the world a better place. Nowadays almost everything is becoming better than ever. It is time for us to create better stuff that helps the world to become a better place.
+                  Besides my knowledge on coding, I have several years of experience in journalism. Where I gained so many soft skills on comunication and working and cooperating in team.
                 </PText>
               </div>
               {/*  <Button btnText="Download CV" btnLink="#" /> */}
