@@ -6,10 +6,10 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import NavMenu from './Components/Reusable/NavMenu';
 import Footer from './Components/Reusable/Footer';
-import SmoothScrollBar from './Components/Reusable/SmoothScrollbar'
+import BackToTop from './Components/Reusable/BackToTop'
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './styles/Theme';
-import GlobalStyles from './styles/GlobalStyle'
+import GlobalStyles from './styles/GlobalStyle';
 
 
 function App() {
@@ -21,12 +21,12 @@ function App() {
   return (
     <ThemeProvider theme={theme === "dark" ? lightTheme : darkTheme}>
       <GlobalStyles />
+      <BackToTop />
       <Router>
         <NavMenu themeToggler={themeToggler} />
-        <SmoothScrollBar />
         <Switch>
           <Route path='/about'>
-            <About />
+            <About theme={theme} />
           </Route>
           <Route path='/projects'>
             <Projects />
@@ -39,6 +39,7 @@ function App() {
           </Route>
         </Switch>
         <br />
+
         <Footer />
       </Router>
     </ThemeProvider >

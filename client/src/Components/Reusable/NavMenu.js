@@ -32,7 +32,7 @@ const NavStyles = styled.nav`
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: ${(props) => props.theme.secondary};
+      color: ${(props) => props.theme.text};
       outline: none;
     }
     .active {
@@ -46,7 +46,7 @@ const NavStyles = styled.nav`
       font-size: 2rem;
       color: ${(props) => props.theme.secondary};
       outline: none;
-     background-color: ${(props) => props.theme.bg};
+      border: dashed 2px ${(props) => props.theme.secondary};
   }
   .mobile-menu-icon {
     position: absolute;

@@ -3,9 +3,9 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../Components/Reusable/PText';
 import Map from '../Components/About/Map';
-import AboutImg from '../assets/images/about_pic.jpg'
+import AboutImg from '../assets/images/about_pic.jpg';
 import ContactBanner from '../Components/Contact/ContactBanner';
-
+import ProgressBar from 'react-bootstrap/ProgressBar';
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
   background-color: ${(props) =>
@@ -44,7 +44,7 @@ const AboutPageStyles = styled.div`
     span {
       background-color:${(props) =>
     props.theme.secondary
-  };;
+  };
       padding: 0.5rem;
       border-radius: 8px;
     }
@@ -64,6 +64,16 @@ const AboutPageStyles = styled.div`
     img {
       border: 2px solid var(--gray-1);
     }
+  }
+  .skills_article{ 
+   display: inline-block;
+   flex-wrap: column;
+   justify-content: center;
+   border: solid 2px ${(props) =>
+    props.theme.secondary
+  };
+  padding: 1.3rem;
+  width:250px;
   }
   .about__info__items {
     margin-top: 5rem;
@@ -133,7 +143,7 @@ background-color: ${(props) =>
   }}
 `;
 
-export default function About() {
+export default function About(props) {
   return (
     <>
       <AboutPageStyles>
@@ -171,29 +181,105 @@ export default function About() {
               <h1 className="about__info__heading">My Skills</h1>
               <h3>FrontEnd</h3>
               <div className="icons_box">
-                <i class="devicon-html5-plain"></i>
-                <i class="devicon-react-original"></i>
-                <i class="devicon-angularjs-plain"></i>
-                <i class="devicon-css3-plain"></i>
-                <i class="devicon-javascript-plain"></i>
-                <i class="devicon-bootstrap-plain"></i>
+                <article className='skills_article'>
+                  <i class="devicon-html5-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>HTML</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-react-original"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={85} label="85%" />
+                  <p>REACT</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-angularjs-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={60} label="60%" ></ProgressBar>
+                  <p>ANGULAR</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-css3-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>CSS</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-javascript-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={80} label="80%" />
+                  <p>JS</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-bootstrap-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={90} label="90%" />
+                  <p>Bootstrap</p>
+                </article>
+
               </div>
               <h3>BackEnd</h3>
               <div className="icons_box">
-                <i class="devicon-nodejs-plain-wordmark"></i>
-                <i class="devicon-mongodb-plain-wordmark"></i>
-                <i class="devicon-php-plain"></i>
-                <i class="devicon-symfony-original"></i>
-                <i class="devicon-apache-plain"></i>
-                <i class="devicon-mysql-plain-wordmark"></i>
+                <article className='skills_article'>
+                  <i class="devicon-nodejs-plain-wordmark"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>Node JS</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-mongodb-plain-wordmark"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>Mongo DB</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-php-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>PHP</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-symfony-original"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>Symfony</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-apache-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>Apache</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-mysql-plain-wordmark"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>Apache</p>
+                </article>
+
               </div>
               <h3>Others</h3>
               <div className="icons_box">
-                <i class="devicon-github-original-wordmark"></i>
-                <i class="devicon-vscode-plain-wordmark"></i>
-                <i class="devicon-phpstorm-plain"></i>
-                <i class="devicon-jira-plain"></i>
-                <i class="devicon-linux-plain"></i>
+                <article className='skills_article'>
+                  <i class="devicon-github-original-wordmark"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>GitHub</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-vscode-plain-wordmark"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>VS Code</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-phpstorm-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>PHP-Storm</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-jira-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={70} label="70%" />
+                  <p>JIRA</p>
+                </article>
+                <article className='skills_article'>
+                  <i class="devicon-linux-plain"></i>
+                  <ProgressBar variant={props.theme === "dark" ? "info" : "success"} animated now={75} label="75%" />
+                  <p>Linux</p>
+                </article>
+
+
+
+
+
+
               </div>
               <h1 className="about__info__heading">Experience</h1>
               <div className="icons_box">
